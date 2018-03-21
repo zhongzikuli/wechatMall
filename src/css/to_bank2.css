@@ -1,0 +1,43 @@
+.page {
+  font-family: "PingFangSC-Regular" !important;
+}
+.page .content {
+  background: #f8f8f8;
+}
+.page .content .up_box {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: .1rem 0;
+}
+.page .content .up_box .con_box {
+  width: 90%;
+  margin: .8rem auto;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+.page .content .up_box .con_box p {
+  margin: 0;
+}
+.page .content .up_box .con_box .text {
+  margin-top: 1rem;
+}
+.page .content .up_box .con_box .tips {
+  font-size: 0.65rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+.page .content .down_box {
+  width: 90%;
+  margin: 2rem auto;
+}
+.page .content .down_box p {
+  background: #de3f37;
+  padding: .6rem 0;
+  text-align: center;
+}
+.page .content .down_box p a {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 300;
+}

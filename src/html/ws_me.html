@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/me.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script type='text/javascript' src="../js/base.js?version=2003"></script>
+	<script src="https://qiyukf.com/script/9596a3336f6c95b05306a3aed1dbf803.js" defer async></script>
+</head>
+<body>
+<div class="page">
+    <!--底部导航-->
+    <nav class="bar bar-tab">
+        <a id="tohome" class="tab-item home" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoHome@2x.png" alt="首页"></span>
+            <span class="tab-label">首页</span>
+        </a>
+        <a id="toshop" class="tab-item shop" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icon_shop@2x.png" alt="店铺"></span>
+            <span class="tab-label">店铺</span>
+        </a>
+        <a id="totour" class="tab-item tour" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoShangxin@2x.png" alt="拼团"></span>
+            <span class="tab-label">拼团</span>
+        </a>
+        <a id="totype" class="tab-item classify" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoFenlei@2x.png" alt="分类"></span>
+            <span class="tab-label">分类</span>
+        </a>
+        <a class="tab-item active me" href="#">
+            <span class="icon"><img src="../img/icoMeActi@2x.png" alt="我的"></span>
+            <span class="tab-label">我的</span>
+        </a>
+    </nav>
+    <div class="content">
+        <div class="up_box">
+            <div class="people_infor">
+                <div class="people_pic"><img id="meImg" src="" alt=""></div>
+                <div class="people_rel"><p><span id="meLevel"></span></p></div>
+                <div class="people_name" id="meName"></div>
+                <div class="people_code"><p>（邀请码：<span id="inviteCode"></span>）</p></div>
+            </div>
+            <div class="people_data">
+                <div class="data_l">
+                    <a href="">
+                        <span id="thisDayCash">100</span><br>今日收益
+                    </a>
+                </div>
+                <div class="data_m">
+                    <a href="">
+                        <span id="thisWeekCash">1000</span><br>本周收益
+                    </a>
+                </div>
+                <div class="data_r">
+                    <a href="">
+                        <span id="thisMonthCash">10000</span><br>本月收益
+                    </a>
+                </div>
+            </div>
+            <div class="edit" id="editCust"><a href=""><img src="../img/page1@2x.png" alt=""></a></div>
+        </div>
+        <div class="shop_box">
+            <div class="deal_shop" id="deal_shop">
+                <a href="">
+                    <div class="deal_l">管理我的店铺</div>
+                    <div class="deal_r"><span class="icon icon-right"></span></div>
+                </a>
+            </div>
+        </div>
+        <div class="null"></div>
+        <div class="mid_box">
+            <div class="income" id="toIncomDet">
+                <a href="">
+                    <div class="income_l">
+                        <p>可用余额<br><span id="commisionMoney">¥0</span></p>
+                    </div>
+                    <div class="income_r">提现<span class="icon icon-right"></span></div>
+                </a>
+            </div>
+        </div>
+        <div class="null"></div>
+        <div class="down_box">
+            <div class="my_cart">
+                <a class="tab-item" href="">
+                    <img src="../img/meGouwuche@3x.png" alt="购物车"><br>
+                    <span class="tab-label">购物车</span><br>
+                    <span class="badge" id="cartNumber">0</span>
+                </a>
+            </div>
+            <div class="my_order">
+                <a class="tab-item" href="">
+                    <img src="../img/meDingdan@3x.png" alt="订单"><br>
+                    <span>订单</span>
+                </a>
+            </div>
+            <div class="my_income">
+                <a class="tab-item" href="">
+                    <img src="../img/meShouyi@3x.png" alt="积分"><br>
+                    <span>我的积分</span>
+                </a>
+            </div>
+            
+            <div class="toNet">
+                <a class="tab-item" href="">
+                    <img src="../img/icon_handle.png" alt="友火"><br>
+                    <span>友火</span>
+                </a>
+            </div>
+            <div class="toCredit">
+                <a class="tab-item" href="">
+                    <img src="../img/icon_credit.png" alt="积分商城"><br>
+                    <span>积分商城</span>
+                </a>
+            </div>
+            <div class="toInvite">
+                <a class="tab-item" href="">
+                    <img src="../img/icon_invitefriends.png" alt="邀请好友"><br>
+                    <span>邀请好友</span>
+                </a>
+            </div>
+            <div class="my_family">
+                <a class="tab-item" href="">
+                    <img src="../img/meTuanduiguanli@3x.png" alt="家族成员"><br>
+                    <span>家族成员</span>
+                </a>
+            </div>
+            <div class="setting">
+                <a class="tab-item">
+                    <img src="../img/meShezhi@3x.png" alt="设置"><br>
+                    <span>设置</span>
+                </a>
+            </div>
+            <div class="my_msg">
+                <a class="tab-item" href="">
+                    <img src="../img/meXiaoxi@3x.png" alt="消息通知"><br>
+                    <span>消息通知</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type='text/javascript' src="../js/ws_me.js?version=2003"></script>
+</html>

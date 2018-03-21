@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>全民集市</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/index.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script type='text/javascript' src='../js/base.js?version=2003'></script>
+    <script type='text/javascript' src="../js/swiper.min.js"></script>
+</head>
+<body>
+    <div class="page" id="page-ptr">
+    <!--底部导航-->
+    <nav class="bar bar-tab">
+        <a class="tab-item active home" href="#">
+            <span class="icon"><img src="../img/icoHomeActi@2x.png" alt="首页"></span>
+            <span class="tab-label">首页</span>
+        </a>
+        <a id="tofresh" class="tab-item" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoShangxin@2x.png" alt="上新"></span>
+            <span class="tab-label">上新</span>
+        </a>
+        <a id="totype" class="tab-item" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoFenlei@2x.png" alt="分类"></span>
+            <span class="tab-label">分类</span>
+        </a>
+        <a id="tome" class="tab-item" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoMe@2x.png" alt="我的"></span>
+            <span class="tab-label">我的</span>
+        </a>
+    </nav>
+
+    <!--页面内容-->
+    <div class="content">
+        <!-- <!--轮播图-->
+        <div class="swiper-container">
+        </div>
+
+        <div class="content-block content_box">
+            <div class="content-item" id="changeBtn">
+                <a class="tab-item">
+                    <span class="icon"><img src="../img/icoYiyuanhuangou@2x.png" alt="一元换购"></span>
+                    <p class="tab-label">一元换购</p>
+                </a>
+            </div>
+            <div class="content-item" id="orderBtn">
+                <a class="tab-item">
+                    <span class="icon"><img src="../img/icoDingdanguanli@2x.png" alt="订单管理"></span>
+                    <p class="tab-label">订单管理</p>
+                </a>
+            </div>
+            <div class="content-item" id="familyBtn">
+                <a class="tab-item">
+                    <span class="icon"><img src="../img/icoJiating@2x.png" alt="家族成员"></span>
+                    <p class="tab-label">家族成员</p>
+                </a>
+            </div>
+            <div class="content-item" id="inviteBtn">
+                <a class="tab-item">
+                    <span class="icon"><img src="../img/icoYaoqingCopy3@2x.png" alt="邀请好友"></span>
+                    <p class="tab-label">邀请好友</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="selling_date">
+                <p class="special_date"></p>
+                <p class="special_weekday"></p>
+            </div>
+            <a id="todays" class="tab-link">
+                <div class="selling_text active">
+                    <p class="text_ch">今日特卖</p>
+                    <p class="text_en">ONLY FOR TODAY</p>
+                </div>
+            </a>
+            <a id="torrmors" class="tab-link">
+                <div class="torrmor">
+                    <p class="item-title">明天
+                      
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <!--特卖品详细-->
+        <div class="content-block selling_box infinite-scroll infinite-scroll-bottom">
+			<!-- 下面是正文 -->
+		    <div class="list-block media-list">
+		    	<ul class="list_container">
+		    		
+		        </ul>
+		    </div>
+		    
+		    <div class="infinite-scroll-preloader">
+              <div class="preloader"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type='text/javascript' src="../js/index.js?version=2003"></script>
+</html>

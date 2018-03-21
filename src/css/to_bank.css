@@ -1,0 +1,109 @@
+.page {
+  font-family: "PingFangSC-Regular" !important;
+}
+.page .content {
+  background: #f8f8f8;
+}
+.page .content .up_box {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: .1rem 0;
+}
+.page .content .up_box .con_box {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  display: -webkit-flex;
+}
+.page .content .up_box .con_box .bank_icon {
+  flex: 1;
+  -webkit-flex: 1;
+  margin-top: .2rem;
+}
+.page .content .up_box .con_box .bank_icon img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.page .content .up_box .con_box .bank_infor {
+  flex: 6;
+  -webkit-flex: 6;
+  font-size: 0.8rem;
+  color: #000000;
+  font-weight: 300;
+}
+.page .content .up_box .con_box .bank_infor span {
+  display: block;
+}
+.page .content .up_box .con_box .bank_infor .card_name {
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin-top: -1.2rem;
+}
+.page .content .null {
+  height: .5rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+.page .content .down_box {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: .1rem 0;
+}
+.page .content .down_box .con_box {
+  width: 90%;
+  margin: .6rem auto;
+  display: flex;
+  display: -webkit-flex;
+  font-size: 0.8rem;
+  font-weight: 300;
+  height: 1.8rem;
+  line-height: 1.8rem;
+}
+.page .content .down_box .con_box span {
+  flex: 1;
+  -webkit-flex: 1;
+  width: 100%;
+}
+.page .content .down_box .con_box input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.page .content .down_box .con_box input {
+  flex: 3;
+  -webkit-flex: 3;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  background: #ffffff;
+  border: none;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+}
+.page .content .btn_box {
+  width: 90%;
+  margin: 1.5rem auto .5rem;
+}
+.page .content .btn_box p {
+  background: #b8b8b8;
+  text-align: center;
+  padding: .8rem 0;
+  pointer-events: none;
+}
+.page .content .btn_box p a {
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.page .content .btn_box p.active {
+  background: #de3f37;
+  pointer-events: auto;
+}
+.page .content .btn_box h6 {
+  margin-top: -0.2rem;
+  text-align: center;
+}
+.page .content .btn_box h6 a {
+  color: #de3f37;
+  font-weight: 300;
+  font-size: 0.7rem;
+}

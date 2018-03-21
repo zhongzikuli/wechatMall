@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/tour_goods_share.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script src="../js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="../js/base.js?version=2003"></script>
+    <script src="../js/util.js?version=2003"></script>
+</head>
+<body>
+<div class="page">
+    <!--底部导航-->
+    <nav class="bar bar-tab" id="nav1">
+        <a class="tab-item more" id="toMore">
+            <span class="tab-label">更多拼团</span>
+        </a>
+        <a class="tab-item go_tour" id="toPartin">
+            <span class="tab-label">一键参团</span>
+        </a>
+    </nav>
+    <nav class="bar bar-tab" id="nav2" style="display:none">
+        <a class="tab-item more" id="toMore2">
+            <span class="tab-label">更多拼团</span>
+        </a>
+    </nav>
+
+    <div class="content">
+        <div class="list-block">
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="sw_data">
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="up_box">
+                <div class="goods_detail">
+                    <div class="tour_num"><span id="grouponNum">0</span>人团</div>
+                    <div class="tour_pri">
+                        <span class="pri_one">&yen;<span id="groupPrice">0</span></span>
+                        <s class="pri_two">&yen;<span id="purchasePrice">0</span></s>
+                    </div>
+                    <div class="tour_bri">累计销量：<span id="salesVolume">0</span>件</div>
+                </div>
+                <div class="goods_text"></div>
+                <div class="goods_bri"></div>
+            </div>
+            <div class="mid_box">
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/tour_goods_share.js?version=2003"></script>
+</html>

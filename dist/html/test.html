@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="btn">点击</div>
+<script>
+window.onload=function () {
+    function fn() {
+        var i=20;
+        return function () {
+            alert(i++);
+        };
+    }
+    var f=fn();
+    document.getElementById('btn').onclick=function () {
+        f();
+    }
+}
+</script>
+</body>
+</html>

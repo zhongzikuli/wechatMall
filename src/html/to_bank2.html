@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>提现到银行卡</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/to_bank2.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script type='text/javascript' src='../js/base.js?version=2003'></script>
+</head>
+<body>
+<div class="page">
+    <div class="content">
+        <div class="up_box">
+            <div class="con_box">
+                <p>提现申请：<span id="curtime"></span></p>
+                <p id="bankname"><span id="bankcard"></span></p>
+                <p id="cardowner"></p>
+                <p>提现金额：<span id="money">2000.21</span>元</p>
+                <p class="text">提现申请处理中……</p>
+                <p class="tips">*提现一般在两个工作日内完成</p>
+            </div>
+        </div>
+        <div class="down_box" id="index">
+            <p><a href="#">返回首页</a></p>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+var custId=0;
+var userType=0;
+$(function () {
+	custId = getLocalSession("custId") || "0";
+	userType = getLocalSession("userType") || "1";
+	if (userType != 2 || custId <= 0){
+		$.toast("非合法用户，无法访问");
+		xhq.gotoErrorPage();
+		return;
+	}
+	
+	$("#curtime").html(getNowFormatDate());
+	$("#bankname").html(xhq.getQuery("bankname"));
+	$("#bankcard").html("（尾号："+xhq.getQuery("bankcard")+"）");
+	$("#cardowner").html(xhq.getQuery("cardowner"));
+	$("#money").html(xhq.getQuery("money")/100);
+	
+	// 接收传入的参数
+	var bn = xhq.getQuery("bankname");
+	$(".bank_name").html(bn+"(尾号:"+(xhq.getQuery('bankcard')||"").slice(-4)+")");
+	$(".card_name").html(xhq.getQuery('cardowner'));
+});
+
+$("#index").click(function(){
+	if (xhq.getQuery("fromUserType") == 2)
+		xhq.gotoUrl("home.html?version="+xhq.getVersion());
+	else{
+		if (xhq.getQuery("isWs") == 1){
+			xhq.gotoUrl("ws_home.html?version="+xhq.getVersion());
+		}else{
+			xhq.gotoUrl("home.html?version="+xhq.getVersion());
+		}
+	}
+})
+
+function getNowFormatDate() {
+    var date = new Date();
+    var seperator1 = "-";
+    var seperator2 = ":";
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    if (month >= 1 && month <= 9) {
+        month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+        strDate = "0" + strDate;
+    }
+    var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+            + " " + date.getHours() + seperator2 + date.getMinutes()
+            + seperator2 + date.getSeconds();
+    return currentdate;
+}
+</script>
+</html>

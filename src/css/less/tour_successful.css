@@ -1,0 +1,62 @@
+.page {
+  background: #f8f8f8;
+  font-family: PingFangSC-Regular !important;
+}
+.page .content {
+  width: 65%;
+  margin: 1.75rem auto 0;
+}
+.page .content .up_box .pic {
+  text-align: center;
+}
+.page .content .up_box .pic img {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+.page .content .up_box .pic span {
+  font-size: 1.46rem;
+  font-weight: 300;
+  color: #de3f37;
+}
+.page .content .up_box .pic .order_num {
+  font-size: .78rem;
+  color: #6d6d72;
+  opacity: 0.6;
+}
+.page .content .up_box .pic .order_num span {
+  font-size: .78rem;
+  color: #6d6d72;
+  opacity: 0.6;
+}
+.page .content .mid_box {
+  color: #979797;
+  padding: 0 0.1rem;
+  text-align: center;
+  margin-top: 3.13rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.page .content .mid_box .back_btn {
+  width: 40%;
+  box-shadow: 0 0 1px 0 #979797;
+  padding: .2rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.page .content .mid_box .share_btn {
+  padding: .2rem;
+  width: 34%;
+  box-shadow: 0 0 1px 0 #de3f37;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #de3f37;
+}
+@media (max-width: 320px) {
+  .page .content .mid_box .back_btn,
+  .page .content .mid_box .share_btn {
+    width: 40%;
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,91 @@
+.page {
+  background: #f8f8f8;
+  font-family: PingFangSC-Regular !important;
+}
+.page .content .list-block {
+  margin: 0;
+}
+.page .content .list-block ul li {
+  width: 90%;
+  margin: 0 auto;
+}
+.page .content .list-block ul li .item-content {
+  color: #000000;
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding-left: 0;
+}
+.page .content .list-block ul li .item-content .item-inner {
+  padding: .8rem 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.page .content .list-block ul li .item-content .item-inner .item-title {
+  width: 20% !important;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+.page .content .list-block ul li .item-content .item-inner .item-input .get_infor {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.85rem;
+  font-weight: 300;
+  flex: 3;
+  -webkit-flex: 3;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input .code_btn {
+  font-size: 0.65rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  border: none;
+  height: 1.2rem;
+  flex: 2;
+  -webkit-flex: 2;
+  text-align: center;
+  width: 5rem;
+  line-height: 1.2rem;
+  margin-top: .4rem;
+  margin-right: 6px;
+  background: #f8f8f8;
+}
+.page .content .btn_box {
+  width: 90%;
+  margin: 1.5rem auto 0;
+  background: #b8b8b8;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.page .content .btn_box p {
+  text-align: center;
+}
+.page .content .btn_box p a {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.page .content .btn_box .active {
+  background: #de3f37;
+}
+@media(max-width:320px){
+  .page .content .list-block ul li .item-content .item-inner .item-title{
+    font-size: .8rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .item-input .get_infor{
+    font-size: .8rem;
+  }
+  .page .content .btn_box{
+    height: 2rem;
+    line-height: 2rem;
+  }
+  .page .content .btn_box p a{
+    font-size: .8rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .item-input .code_btn{
+    font-size: .6rem;
+  }
+}

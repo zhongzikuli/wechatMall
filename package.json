@@ -1,0 +1,14 @@
+{
+  "name": "wechatMall",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.2.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^1.5.3",
+    "run-sequence": "^2.2.0"
+  }
+}

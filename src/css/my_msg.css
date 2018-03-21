@@ -1,0 +1,25 @@
+.page {
+  background: #f8f8f8;
+  font-family: "PingFangSC-Regular" !important;
+}
+.page .content .msg_box {
+  width: 90%;
+  margin: 0 auto;
+}
+.page .content .msg_box .msg_header {
+  margin-top: .8rem;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #000000;
+}
+.page .content .msg_box .msg_time {
+  font-size: 0.65rem;
+  color: #000000;
+  font-weight: 300;
+}
+.page .content .msg_box .msg_con {
+  margin-top: .8rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8);
+}

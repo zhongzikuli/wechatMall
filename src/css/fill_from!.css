@@ -1,0 +1,82 @@
+.page {
+  background: #ffffff;
+  font-family: PingFangSC-Regular !important;
+}
+.page .bar-tab {
+  background: #de3f37;
+}
+.page .bar-tab a {
+  color: #ffffff;
+  font-size: .85rem;
+  font-weight: 300;
+}
+.page .content .from_box {
+  width: 90%;
+  margin: 1.5rem auto;
+}
+.page .content .from_box .from_icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1rem auto .5rem;
+}
+.page .content .from_box .from_icon img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.page .content .from_box .from_tilte {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  margin-top: 1rem;
+}
+.page .content .from_box .from_tilte span {
+  color: #de3f37;
+}
+.page .content .from_box .code_input {
+  width: 100%;
+  margin: 1rem auto 0;
+  text-align: center;
+}
+.page .content .from_box .code_input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+.page .content .from_box .code_input .your_code {
+  width: 90%;
+  border: none;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.page .content .from_box .code_input p {
+  width: 95%;
+  margin: 0 auto;
+  border-top: 1px solid #000000;
+  padding-top: .5rem;
+  font-size: .65rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+.page .content .go_open {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8rem;
+  background: #de3f37;
+  border: none;
+}
+.page .content .go_open a {
+  color: #ffffff;
+}
+@media(max-width: 320px){
+  .page .content .from_box .from_tilte{
+    font-size: 0.8rem;
+  }
+  .page .content .from_box .code_input p{
+    font-size: .6rem;
+  }
+}

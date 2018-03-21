@@ -1,0 +1,39 @@
+.page {
+  font-family: PingFangSC-Regular;
+  background: #ffffff;
+}
+.page .bar-header-secondary {
+  top: 0;
+}
+.page .bar-header-secondary ~ .content {
+  top: 2.2rem;
+}
+.page .content {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+}
+.page .content .list-block {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.page .content .list-block .recent_list {
+  height: 2rem;
+  line-height: 2rem;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding-left: 1rem;
+  background: #fafafa;
+}
+.page .content .list-block .recent_list a {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
+.page .content .list-block .active {
+  background: rgba(0, 0, 0, 0.2);
+}
+.page .content .list-block .active a {
+  color: #ffffff;
+}

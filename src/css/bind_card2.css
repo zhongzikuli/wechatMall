@@ -1,0 +1,57 @@
+.page {
+  font-family: "PingFangSC-Regular" !important;
+}
+.page .content {
+  background: #f8f8f8;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.page .content .up_box {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+}
+.page .content .up_box .list-block {
+  width: 90%;
+  margin: 0 auto;
+}
+.page .content .up_box .list-block ul li .item-content {
+  padding-left: 0;
+}
+.page .content .up_box .list-block ul li .item-content .item-inner {
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+}
+.page .content .up_box .list-block ul li .item-content .item-inner .label {
+  width: 25%;
+  font-size: 0.85rem;
+  color: #000000;
+}
+.page .content .up_box .list-block ul li .item-content .item-inner input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.page .content .up_box .list-block ul .bank_list .item-content .item-inner .label {
+  width: 25%;
+}
+.page .content .up_box .list-block ul .bank_list .item-content .item-inner .item-input {
+  width: 73%;
+}
+.page .content .up_box .list-block ul .bank_list .item-content .item-inner .icon_box {
+  width: 2%;
+}
+.page .content .btn_box {
+  width: 90%;
+  margin: 1.5rem auto;
+}
+.page .content .btn_box p {
+  background: #b8b8b8;
+  padding: .8rem 0;
+  text-align: center;
+}
+.page .content .btn_box p a {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.page .content .btn_box p.active {
+  background: #de3f37;
+}

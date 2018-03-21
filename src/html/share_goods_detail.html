@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>分享商品详情页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/share_goods_detail.css?version=2003">
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script type='text/javascript' src='../js/zepto.picLazyLoad.min.js'></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/base.js?version=2003"></script>
+</head>
+<body>
+<div class="page">
+    <nav class="bar bar-tab buy_now">
+        <a class="tab-item tohome" href="#">
+            <span class="icon"><img src="../img/icon_tohome.png" alt=""></span>
+        </a>
+        <a class="tab-item toshop" href="#">
+            <span class="icon"><img src="../img/icon_shop@2x.png" alt=""></span>
+        </a>
+        <a class="tab-item contact external" href="https://qmjs.qiyukf.com/client?k=9596a3336f6c95b05306a3aed1dbf803&wp=1&type=1">
+            <span class="icon"><img src="../img/icon_contact.png" alt=""></span>
+        </a>
+        <a class="go_change" id="buy_now">
+            <span>立即购买</span>
+        </a>
+    </nav>
+
+    <div class="content">
+        <div class="content_block">
+            <div class="wx_box">
+                <div class="wx_pic"></div>
+                <div class="wx_text"></div>
+            </div>
+            <div class="tabs">
+                <!--商品详情-->
+                <div class="goods_box">
+                    <!--商品状态：进行中？已售完？已结束？未开始？-->
+                    <div class="goods_state"><img src="" alt=""/></div>
+                    <!--产品轮播图-->
+                    <div class="swiper-container">
+                    </div>
+
+                    <!--产品标题简介-->
+                    <div class="goods_brief">
+                        <!--<div class="brief_title">日式小茶盘家用整套功夫茶具陶瓷茶台竹制干泡台白瓷茶壶茶杯套装</div>-->
+                        <!--<div class="brief_price">-->
+                            <!--<p class="p_l">-->
+                                <!--<span class="price_one">特卖价</span>-->
+                                <!--<span class="span_m">¥176</span>-->
+                                <!--<span class="price_two">¥316</span>-->
+                            <!--</p>-->
+                            <!--<p class="p_r">-->
+                                <!--<span class="end_time"><span>14:00</span>开始抢购<span></span></span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    </div>
+
+                </div>
+                <!--选择规格-->
+                <div class="goods_spec">
+                    <div class="spec_box">
+                        <div class="spec_title">选择规格</div>
+                        <div class="spec_item">
+                        </div>
+                    </div>
+                    <div class="spec_box spec_num">
+                        <div class="num_title">购买数量</div>
+                        <div class="num_box">
+                            <span class="subtract">-</span>
+                            <input type="text" value="1" class="num_handle" readonly id="num_handle">
+                            <span class="add">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-tab fixed-tab goods_text">
+                    <a href="#text_one" class="tab-link active button">商品介绍</a>
+                    <a href="#text_two" class="tab-link button">规格参数</a>
+                    <a href="#text_three" class="tab-link button">购买须知</a>
+                </div>
+                <div class="tabs">
+                    <!--商品介绍-->
+                    <div id="text_one" class="tab active">
+                        <div class="content-block">
+                            <div class="text_goods">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--规格参数-->
+                    <div id="text_two" class="tab">
+                        <div class="content-block">
+                            <table class="parameter">
+
+                            </table>
+                        </div>
+                    </div>
+                    <!--购买须知-->
+                    <div id="text_three" class="tab">
+                        <div class="content-block">
+                            <div class="to_know">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--绑定手机号码弹出框-->
+    <div class="cover"></div>
+    <!--绑定手机号码弹出框 内容-->
+    <div class="bind_phone">
+        <div class="bind_title">为保证账号安全 请绑定手机号码</div>
+        <div class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">手机号</div>
+                            <div class="item-input"><input type="text" placeholder="请输入手机号" class="get_phone" maxlength="11" id="newPhoneNo">
+                                <span id="btnGetCode" class="code_btn">获取验证码</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">验证码</div>
+                            <div class="item-input">
+                                <input type="email" placeholder="请输入验证码" class="get_infor" id="verficode">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bind_btn">
+            <div class="bind_cancle">取消</div>
+            <div class="bind_comfir">确定</div>
+        </div>
+    </div>
+    
+     <!--网咖商品 绑定身份证弹出框-->
+    <div class="bind_id">
+        <div class="bind_title">为保证账号安全 请绑定身份证</div>
+        <div class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">身份证</div>
+                            <div class="item-input">
+                                <input type="text" id="newCustNumber" name="newCustNumber" placeholder="请输入身份证" class="get_infor" maxlength="18" minlength="18">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bind_btn">
+            <div class="bind_cancle">取消</div>
+            <div class="bind_comfir">确定</div>
+        </div>
+    </div>
+    
+</div>
+</body>
+<script src="../js/util.js?version=2003"></script>
+<script src="../js/order_util.js?version=2003"></script>
+<script src="../js/share_goods_detail.js?version=2003"></script>
+</html>

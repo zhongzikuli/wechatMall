@@ -1,0 +1,122 @@
+.page{
+  background: rgb(255,255,255);
+  font-family: PingFangSC-Regular;
+  .content{
+    .up_box{
+      background: rgb(255,255,255);
+      position: relative;
+      .big_circle{
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        margin-left: -5rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        background: rgba(0,0,0,0.1);
+        .small_circle{
+          width: 9rem;
+          height: 9rem;
+          margin-left: .5rem;
+          margin-top: .5rem;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+          background: rgb(246,166,35);
+          text-align: center;
+          color: rgb(255,255,255);
+          font-size: .85rem;
+          font-weight: 300;
+          .box_one{
+            padding-top: 2rem;
+            .mon_avi{
+              font-size: 1.4rem;
+            }
+            .mon_text{
+              font-size: .75rem;
+            }
+          }
+        }
+      }
+    }
+    .up_more{
+      width: 90%;
+      height: 2.8rem;
+      line-height: 2.8rem;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      margin: 12rem auto 0;
+      display: flex;
+      display: -webkit-flex;
+      font-size: .8rem;
+      font-weight: 300;
+      color: rgb(0,0,0);
+      .more_l{
+        flex: 1;
+        -webkit-flex: 1;
+      }
+      .more_r{
+        flex: 2;
+        -webkit-flex: 2;
+        text-align: right;
+        font-size: .75rem;
+        color: rgb(102,102,102);
+        .icon{
+          color: rgb(0,0,0);
+          margin-left: .5rem;
+        }
+      }
+    }
+    .null{
+      height: .5rem;
+      width: 100%;
+      background: rgb(250,250,250);
+    }
+    .mid_box,
+    .down_box{
+      width: 90%;
+      margin: 0 auto;
+      font-size: .8rem;
+      font-weight: 300;
+      color: rgb(0,0,0);
+      .mid_one,
+      .mid_two,
+      .mid_thr,
+      .mid_fou{
+        display: flex;
+        display: -webkit-flex;
+        height: 2.8rem;
+        line-height: 2.8rem;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        .mid_l{
+          flex: 1;
+          -webkit-flex: 1;
+        }
+        .mid_r{
+          text-align: right;
+          flex: 2;
+          -webkit-flex: 2;
+          .mon_avi{
+            color: rgb(222,63,55);
+            margin-right: .5rem;
+          }
+
+        }
+      }
+      .mid_one{
+        border-top: none;
+      }
+    }
+    .down_box{
+      .mid_one,
+      .mid_two,
+      .mid_thr,
+      .mid_fou{
+        .mid_r{
+          .mon_avi{
+            color: rgb(102,102,102);
+          }
+        }
+      }
+    }
+  }
+}

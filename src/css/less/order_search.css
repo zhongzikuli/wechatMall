@@ -1,0 +1,105 @@
+.page {
+  background: #ffffff;
+  font-family: PingFangSC-Regular !important;
+}
+.page .content .list-block {
+  margin: 0;
+}
+.page .content .list-block ul li .item-content {
+  padding-left: 0;
+}
+.page .content .list-block ul li .item-content .item-inner .item-title.label {
+  width: 20%;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+.page .content .btn_box {
+  width: 90%;
+  margin: 1rem auto .5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  background: #de3f37;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-align: center;
+  font-size: .85rem;
+  font-weight: 300;
+}
+.page .content .order_list .null {
+  height: .5rem;
+  background: #f8f8f8;
+}
+.page .content .order_list .infor {
+  margin: .5rem 5%;
+  font-size: .8rem;
+}
+.page .content .order_list .infor .offline_name {
+  color: #939393;
+  font-size: .9rem;
+  margin: 0 0.15rem;
+}
+.page .content .order_list .infor .date_start,
+.page .content .order_list .infor .date_end,
+.page .content .order_list .infor .goods_name {
+  color: #de3f37;
+  margin: 0 0.15rem;
+}
+.page .content .order_list .up_box {
+  background: #f8f8f8;
+  padding: 1rem 5%;
+  display: flex;
+  display: -webkit-flex;
+}
+.page .content .order_list .up_box .up_l {
+  flex: 2;
+  -webkit-flex: 2;
+}
+.page .content .order_list .up_box .up_r {
+  flex: 5;
+  -webkit-flex: 5;
+  color: #939393;
+}
+@media screen and (max-width: 320px) {
+  .page .content .list-block ul li .item-content .item-inner .item-title.label {
+    font-size: .75rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .item-input input {
+    font-size: .75rem;
+  }
+  .page .content .btn_box {
+    height: 2.2rem;
+    line-height: 2.2rem;
+  }
+  .page .content .order_list .infor {
+    font-size: .7rem;
+  }
+  .page .content .order_list .infor .offline_name {
+    font-size: .85rem;
+  }
+  .page .content .order_list .up_box {
+    font-size: .75rem;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 374px) {
+  .page .content .list-block ul li .item-content .item-inner .item-title.label {
+    font-size: .8rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .item-input input {
+    font-size: .8rem;
+  }
+  .page .content .btn_box {
+    height: 2.4rem;
+    line-height: 2.4rem;
+  }
+  .page .content .order_list .infor {
+    font-size: .75rem;
+  }
+  .page .content .order_list .infor .offline_name {
+    font-size: .85rem;
+  }
+  .page .content .order_list .up_box {
+    font-size: .8rem;
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="../css/sm.min.css">
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" href="../css/goods_detail.css?version=2003">
+		<script type='text/javascript' src='../js/zepto.min.js'></script>
+		<script type='text/javascript' src='../js/sm.min.js'></script>
+		<script type='text/javascript' src='../js/zepto.picLazyLoad.min.js'></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="../js/swiper.min.js"></script>
+		<script src="../js/base.js?version=2003"></script>
+	</head>
+
+	<body>
+		<div class="page">
+			<!--这里是普通商品的nav-->
+			<nav class="bar bar-tab" id="addCart">
+				<a class="tab-item tohome" href="#" id="tohome1">
+					<span class="icon"><img src="../img/icon_tohome.png" alt=""></span>
+				</a>
+				<a class="tab-item contact external" href="https://qmjs.qiyukf.com/client?k=9596a3336f6c95b05306a3aed1dbf803&wp=1&type=1">
+					<span class="icon"><img src="../img/icon_contact.png" alt=""></span>
+				</a>
+				<a class="tab-item cart">
+					<span class="icon"><img src="../img/icon_shoppingcart.png" alt=""></span>
+					<span class="badge">0</span>
+				</a>
+				<a class="tab-item add_cart">
+					<span class="tab-label">加入购物车</span>
+				</a>
+				<a class="tab-item buy_now">
+					<span class="tab-label">立即购买</span>
+				</a>
+			</nav>
+
+			<!--这里是线下商家商品的nav-->
+			<nav class="bar bar-tab" id="addCart2" style="display:none">
+				<a class="tab-item tohome" href="#" id="tohome2">
+					<span class="icon"><img src="../img/icon_tohome.png" alt=""></span>
+				</a>
+				<a class="tab-item contact external" href="https://qmjs.qiyukf.com/client?k=9596a3336f6c95b05306a3aed1dbf803&wp=1&type=1">
+					<span class="icon"><img src="../img/icon_contact.png" alt=""></span>
+				</a>
+				<!--要求点击弹出绑定手机号码提示-->
+				<a class="tab-item buy_now">
+					<span class="tab-label">立即购买</span>
+				</a>
+			</nav>
+
+			<div class="content">
+				<header class="bar bar-nav">
+					<div class="buttons-tab">
+						<a id="goods_detail_tab" href="#goods_detail" class="tab-link active button">商品详情</a>
+						<a id="goods_document_tab" href="#goods_document" class="tab-link button">中央文案</a>
+					</div>
+				</header>
+				<div class="content_block">
+					<div class="tabs">
+						<!--商品详情-->
+						<div id="goods_detail" class="tab active goods_detail">
+							<div class="goods_box">
+								<!--商品状态：进行中？已售完？已结束？未开始？-->
+								<div class="goods_state"><img src="../img/jinxingzhong.png" alt="" /></div>
+								<!--产品轮播图-->
+								<div class="swiper-container">
+
+								</div>
+
+								<!--产品标题简介-->
+								<div class="goods_brief" style="display: none;" id="brief1">
+									<div class="brief_title">减肥健身室内自行车 炫酷黑/高贵白2色 </div>
+									<!--<div class="brief_price">-->
+										<!--<p class="p_l">-->
+											<!--<span class="price_one">特卖价</span>-->
+											<!--<span class="span_m">¥1999</span>-->
+											<!--<span class="price_two">¥2999</span><br>-->
+											<!--<span class="price_three">送积分：<span class="bonus">1999</span></span>-->
+										<!--</p>-->
+										<!--<p class="p_r"><span class="end_time"><span>14:00</span>开始抢购</span></p>-->
+									<!--</div>-->
+								</div>
+								
+								<!--微商版本商品标题介绍-->
+								<div class="goods_brief" id="brief2">
+									<div class="brief_title">减肥健身室内自行车 炫酷黑减肥健身室内自行车 炫酷黑/高贵减肥健身室内自行车 炫酷黑/高贵减肥健身室内自行车 炫酷黑/高贵减肥健身室内自行车 炫酷黑/高贵减肥健身室内自行车 炫酷黑/高贵/高贵白2色 </div>
+									<!--<div class="brief_price">-->
+										<!--<p class="p_l">-->
+											<!--<span class="price_one">特卖价</span>-->
+											<!--<span class="span_m">¥1999</span>-->
+											<!--<span class="price_two">¥2999</span><br>-->
+											<!--<span class="price_three">赚：<span class="bonus">¥1999</span></span>-->
+										<!--</p>-->
+										<!--<p class="p_r">-->
+											<!--<span class="price_num">2888</span>人在卖<br>-->
+											<!--<span class="end_time"><span>14:00</span>开始抢购</span>-->
+										<!--</p>-->
+									<!--</div>-->
+								</div>
+							</div>
+							<!--选择规格-->
+							<div class="goods_spec">
+								<div class="spec_box">
+									<div class="spec_title">选择规格</div>
+									<div class="spec_item">
+									</div>
+								</div>
+								<!--购买数量-->
+								<div class="spec_box spec_num">
+									<div class="num_title">购买数量</div>
+									<div class="num_box">
+										<span class="subtract">-</span>
+										<input type="text" value="1" class="num_handle" readonly id="num_handle">
+										<span class="add">+</span>
+									</div>
+								</div>
+							</div>
+							<div class="buttons-tab fixed-tab goods_text" data-offset="44">
+								<a href="#text_one" class="tab-link active button">商品介绍</a>
+								<a href="#text_two" class="tab-link button">规格参数</a>
+								<a href="#text_three" class="tab-link button">购买须知</a>
+							</div>
+							<div class="tabs">
+								<!--商品介绍-->
+								<div id="text_one" class="tab active">
+									<div class="content-block">
+										<div class="text_goods" scrolling="no"></div>
+										<div class="pic_goods"></div>
+									</div>
+								</div>
+								<!--规格参数-->
+								<div id="text_two" class="tab">
+									<div class="content-block">
+										<table class="parameter">
+
+										</table>
+									</div>
+								</div>
+								<!--购买须知-->
+								<div id="text_three" class="tab">
+									<div class="content-block">
+										<div class="to_know">
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<!--中央文案-->
+						<div id="goods_document" class="tab goods_document">
+							<div class="document_box">
+								<div class="document_pic">
+
+								</div>
+								<div class="document_text" contenteditable="false">
+									<span class="document_span"></span>
+								</div>
+								<div class="document_deal">
+									<span class="copy_document" id="copy_document">选中文案</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--绑定手机号码弹出框-->
+			<div class="cover" style="display:none"></div>
+
+			<!--绑定手机号码弹出框 内容-->
+			<div class="bind_phone" style="display:none">
+				<div class="bind_title">为保证账号安全 请绑定手机号码</div>
+				<div class="list-block">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">手机号</div>
+									<div class="item-input"><input type="text" placeholder="请输入手机号" class="get_phone" maxlength="11" id="newPhoneNo">
+										<span id="btnGetCode" class="code_btn">获取验证码</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">验证码</div>
+									<div class="item-input">
+										<input type="text" placeholder="请输入验证码" class="get_infor" id="verficode">
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="bind_btn">
+					<div class="bind_cancle">取消</div>
+					<div class="bind_comfir">确定</div>
+				</div>
+			</div>
+
+			<!--网咖商品 绑定身份证弹出框-->
+			<div class="bind_id">
+				<div class="bind_title">为保证账号安全 请绑定身份证</div>
+				<div class="list-block">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">身份证</div>
+									<div class="item-input">
+										<input type="text" id="newCustNumber" name="newCustNumber" placeholder="请输入身份证" class="get_infor" maxlength="18" minlength="18">
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="bind_btn">
+					<div class="bind_cancle">取消</div>
+					<div class="bind_comfir">确定</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="../js/util.js?version=2003"></script>
+	<script src="../js/order_util.js?version=2003"></script>
+	<script src="../js/goods_detail.js?version=2003"></script>
+
+</html>

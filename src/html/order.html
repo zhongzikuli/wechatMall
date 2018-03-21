@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>订单页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/order.css?version=2003">
+	<script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script src="../js/base.js?version=2003"></script>
+</head>
+<body>
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page">
+        <!-- 工具栏 -->
+        <nav class="bar bar-tab">
+            <footer>
+                <p>
+                    <span class="fukuan" id="fukuanId">实付：</span>
+                    <span class="fukuan price" id="realPay" style="color:rgb(222, 63, 55);">0</span>
+                </p>
+                <div class="xia">
+                    <span id="paymentContent">去付款</span>
+                </div>
+
+            </footer>
+        </nav>
+
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <div class="content-block">
+                <div class="content-block1">
+                    <p><span style="position:relative;top:-5px;left: -.5rem" id="adtOrderTitle">临时驻留可隐藏的文本提醒栏 可以用作订单</span><img src="../img/icoClose@2x.png" alt=""></p>
+                </div>
+                <div class="content-block2">
+                 
+                </div>
+                <!--商品列表-->
+                <div id="list1" >
+                    <p>商品信息</p>
+                    <!--普通列表-->
+                    <div id="mailList"></div>
+                </div>
+
+            </div>
+            <div class="list2">
+                <div class="shangpin">
+                    <span style="width: 49%;display: inline-block;">商品合计</span>
+                    <span id="originalPrice" class="bargain-price price" style="width: 49%;display: inline-block; text-align: right">0</span>
+                </div>
+                <div class="shangpin">
+                    <span>配送方式</span>
+                    <span class="get_ways" >
+                        <label><input name="shippingModel" id="shippingModel" type="radio" value="2" checked />邮寄</label>
+                        <label><input name="shippingModel" id="shippingModel" type="radio" value="1">到店自提</label>
+                    </span>
+                </div>
+                <div class="shangpin"><span>运费</span>
+                    <span id="yunfei">满<i id="avoidExpressFee1" >0</i>元免邮</span>
+                    <span class="bargain-price price" id="expressFee1">0</span>
+                </div>
+            </div>
+            <!--微商商品下单可以开启收益抵扣-->
+            <div class="list3" style="display: none;">
+                <div class="item-content">
+			         <div class="item-inner">
+				          <div class="item-title label">收益抵扣</div>
+				          <div class="item-input">
+				          	  <span id="deductionCashId" deductionCash="0">¥0</span>
+				            	  <label class="label-switch">
+					                <input type="checkbox" id="deductionCashCheckBox" name="deductionCashCheckBox" onchange="deductionCashChange()" value="0">
+					                <div class="checkbox"></div>
+				              </label>
+				          </div>
+		          	</div>
+		        </div>
+            </div>
+            
+            <div class="liuyan">
+                <p>留言</p>
+                <textarea  id="remark" name="remark" type="text" placeholder="请输入留言。。。"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/order.js?version=2003"></script>
+</html>

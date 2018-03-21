@@ -1,0 +1,84 @@
+.page {
+  background: #f8f8f8;
+  font-family: PingFangSC-Regular !important;
+}
+.page .content .list-block {
+  margin: 0;
+}
+.page .content .list-block ul li .item-content .item-inner {
+  padding-right: 0;
+}
+.page .content .list-block ul li .item-content .item-inner .item-title.label {
+  width: 20%;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input {
+  position: relative;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input input {
+  font-size: .85rem;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+.page .content .list-block ul li .item-content .item-inner .item-input .code_btn {
+  position: absolute;
+  right: 1rem;
+  top: .5rem;
+  font-size: .65rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.1rem 0.5rem;
+  text-align: center;
+}
+.page .content .btn_box {
+  width: 90%;
+  margin: 1.5rem auto 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.page .content .btn_box p {
+  text-align: center;
+  background: #b8b8b8;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.page .content .btn_box p a {
+  color: #ffffff;
+  font-size: .85rem;
+  font-weight: 300;
+}
+.page .content .btn_box .active {
+  background: #de3f37;
+}
+@media screen and (max-width: 320px) {
+  .page .content .list-block ul li .item-content .item-inner .item-title.label {
+    font-size: .75rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .item-input .code_btn {
+    font-size: .6rem;
+    padding: 0.1rem 0.3rem;
+    right: .8rem;
+  }
+  .page .content .btn_box {
+    height: 2.2rem;
+    line-height: 2.2rem;
+  }
+  .page .content .btn_box p a {
+    font-size: .75rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .page .content .list-block ul li .item-content .item-inner .item-title.label {
+    font-size: .8rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .item-input .code_btn {
+    font-size: .6rem;
+    right: .8rem;
+  }
+  .page .content .btn_box {
+    height: 2.4rem;
+    line-height: 2.4rem;
+  }
+  .page .content .btn_box p a {
+    font-size: .8rem;
+  }
+}

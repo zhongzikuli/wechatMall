@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>邀请开店</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/selfreg2.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script type='text/javascript' src='../js/base.js?version=2003'></script>
+</head>
+<body>
+    <div class="page">
+
+        <div class="content">
+            <div class="confirm_box">
+                <div class="confirm_input">
+                    <p class="first_p">请确认邀请人信息</p>
+                    <p class="second_p">
+                        <span class="span_l">邀请人</span>
+                        <span class="span_r">
+                        <img id="sharerImg" src="" alt="" class="person_pic">
+                        <span id="sharerName1" class="person_name"></span>
+                    </span>
+                    </p>
+                </div>
+            </div>
+            <div class="null"></div>
+            <div class="from_box">
+                <div class="from_icon"><img src="../img/icon_selfreg2.png" alt=""></div>
+            </div>
+
+            <div class="infor_box">
+                <p class="infor_title">绑定手机号</p>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">手机号</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="请输入手机号" class="get_infor get_phone" id="newPhoneNo">
+                                        <span id="btnGetCode" class="code_btn">获取验证码</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">验证码</div>
+                                    <div class="item-input">
+                                        <input type="email" placeholder="请输入验证码" class="get_infor" id="verficode">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d_null"></div>
+            <div class="go_pay" id="buttonPay"><a>支付年费立即开店</a></div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src='../js/sharereg.js?version=2003'></script>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>店铺管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/ws_manage_shop.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script type='text/javascript' src="../js/base.js?version=2003"></script>
+</head>
+<body>
+<div class="page" id="page-ptr">
+    <div class="content">
+        <div class="up_box">
+            <div class="box_l">
+                <div class="img_box">
+                    <img src="" alt="" id="input_image">
+                </div>
+            </div>
+
+            <div class="box_m">
+                <div class="ship_box">
+                    <span id="input_level"></span>
+                    <span id="input_sname"></span>
+                </div>
+            </div>
+            <div class="goods_state" id="qrcode"></div>
+            <div class="box_r"><img src="../img/icon_dian@1x.png" alt=""></div>
+        </div>
+
+        <!--店铺里有商品-->
+        <div class="content-block infinite-scroll infinite-scroll-bottom" id="content-block1" style="display: block">
+         <!-- 下面是正文 -->
+
+            <div class="con-block">
+                <ul class="list_container">
+
+                    <!--<li>-->
+                        <!--<a href="" class="item-link list-button external">-->
+                            <!--<div class="li_l">-->
+                                <!--<img src="../img/banner.png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="li_r">-->
+                                <!--<div class="up_con">减肥健身室内自行车 炫酷黑/高贵白2色 </div>-->
+                                <!--<div class="mid_con">-->
+                                    <!--<div class="pri_l">-->
+                                        <!--<p>¥<span class="pri_one">1999</span><s>¥<span class="pri_two">2999</span></s></p >-->
+                                    <!--</div>-->
+                                    <!--<div class="pri_r">赚: ¥<span>199</span></div>-->
+                                <!--</div>-->
+                                <!--<div class="down_con">-->
+                                    <!--<div class="sur_l">-->
+                                        <!--<p class="surplus">-->
+                                            <!--<span class="span_f"></span>-->
+                                            <!--<span class="span_s">剩余<span>98</span>个</span>-->
+                                        <!--</p >-->
+                                    <!--</div>-->
+
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                        <!--<div class="sur_m">-->
+                            <!--<img src="../img/icon_delete@2x.png" alt="" class="delete">-->
+                            <!--<img src="../img/icon_up_active%20@2x.png" alt="" class="up">-->
+                        <!--</div>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+            <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+            </div>
+        </div>
+
+        <!--店铺里没有商品-->
+        <div class="content-block2" id="content-block2" style="display: none">
+            <div class="con-block">
+                <img src="../img/icon_nothing@2x.png" alt="">
+                <p>您的店铺还没有商品！</p>
+                <a href="#" class="button button-danger" id="tohome">去逛逛</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type='text/javascript' src="../js/ws_manage_shop.js?version=2003"></script>
+<script type='text/javascript' src='../js/jquery.1.10.2.min.js'></script>
+<script type="text/javascript" src="../js/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+var qrcodeConfig = {
+	render: "canvas",//设置渲染方式  
+    size: 70, //尺寸
+	ecLevel: 'L', //容错级别
+	quiet: 1,//边距
+	background: "#ffffff",//背景颜色
+	text: shareUrl //跳转链接
+};
+
+jQuery('#qrcode').qrcode(qrcodeConfig);
+</script>
+</html>

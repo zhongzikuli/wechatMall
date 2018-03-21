@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>订单管理</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/order_detail.css?version=2003">
+	<script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/base.js?version=2003"></script>
+</head>
+
+<body>
+    <div class="page" id="page-ptr">
+        <div class="content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active" id="all">全部</div>
+                    <div class="swiper-slide" id="waitPay">待支付</div>
+                    <div class="swiper-slide" id="waitDeliver">待发货</div>
+                    <div class="swiper-slide" id="deliver">已发货</div>
+                    <div class="swiper-slide" id="finish">已完成</div>
+                    <div class="swiper-slide" id="refund">已退货</div>
+                    <div class="swiper-slide" id="close">已关闭</div>
+                </div>
+            </div>
+
+            <div class="content-block infinite-scroll infinite-scroll-bottom">
+                <div class="tabs">
+                    <div id="tab" class="tab active">
+                        <div id="tabContent">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/order_list.js?version=2003"></script>
+</html>

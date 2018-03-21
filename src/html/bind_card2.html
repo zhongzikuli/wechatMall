@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>绑定银行卡</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/bind_card2.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script type='text/javascript' src='../js/base.js?version=2003'></script>
+</head>
+<body>
+    <div class="page">
+        <div class="content">
+            <div class="up_box">
+                <div class="list-block">
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">户名</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="请输入户名" class="card_name">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">卡号</div>
+                                    <div class="item-input">
+                                        <input type="email" placeholder="请输入卡号" class="card_num">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="bank_list">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">银行</div>
+                                    <div class="item-input">
+                                        <select class="select">
+                                            <option style="color:rgba(0,0,0,0.3);">请选择银行</option>
+                                            <option>中国银行</option>
+                                            <option>工商银行</option>
+                                            <option>建设银行</option>
+                                            <option>招商银行</option>
+                                            <option>农业银行</option>
+                                            <option>邮政银行</option>
+                                        </select>
+                                    </div>
+                                    <div class="icon_box">
+                                        <span class="icon icon-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">开户银行</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="请输入开户银行" class="card_count">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn_box">
+                <p><a href="#">下一步</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src='../js/bind_card.js?version=2003'></script>
+</html>

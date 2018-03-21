@@ -1,0 +1,104 @@
+.page {
+  background: #f7f7f7;
+  font-family: "PingFangSC-Regular" !important;
+}
+.page .content .up_box {
+  width: 100%;
+  background: #d64343;
+}
+.page .content .up_box .people_infor {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+.page .content .up_box .people_infor .people_pic {
+  width: 6.5rem;
+  height: 6.5rem;
+  margin: 0 auto;
+}
+.page .content .up_box .people_infor .people_pic img {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border: 4px solid #c9c9c9;
+}
+.page .content .up_box .people_infor .people_rel {
+  font-size: 0.6rem;
+  font-weight: 300;
+  color: #ffffff;
+  width: 25%;
+  margin: 0 auto;
+}
+.page .content .up_box .people_infor .people_rel p {
+  box-shadow: 0 0 2px 0 #ffffff;
+}
+.page .content .up_box .people_infor .people_name {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -0.4rem;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.page .content .up_box .people_infor .people_code p {
+  margin-top: 0;
+  font-size: .65rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+.page .content .null {
+  height: 2rem;
+  line-height: 2.5rem;
+  background: rgba(0, 0, 0, 0.1);
+  padding-left: 5%;
+  font-size: 0.65rem;
+  font-weight: 300;
+}
+.page .content .down_box {
+  width: 90%;
+  margin: 0 auto;
+}
+.page .content .down_box ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+.page .content .down_box ul .name {
+  display: flex;
+  display: -webkit-flex;
+  padding: .8rem 0 .5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.page .content .down_box ul .name .name_pic {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.page .content .down_box ul .name .name_pic img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.page .content .down_box ul .name .name_infor {
+  width: 100%;
+  flex: 5;
+  -webkit-flex: 5;
+}
+.page .content .down_box ul .name .name_infor span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #000000;
+}
+.page .content .down_box ul .name .name_infor .title {
+  font-size: 0.65rem;
+  font-weight: 300;
+  text-align: left;
+  margin-top: -0.8rem;
+  padding-left: .5rem;
+}

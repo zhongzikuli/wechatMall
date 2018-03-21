@@ -1,0 +1,90 @@
+.page {
+  font-family: "PingFangSC-Regular" !important;
+}
+.page .content {
+  background: #f8f8f8;
+}
+.page .content .up_box {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: .1rem 0;
+}
+.page .content .up_box .con_box {
+  width: 90%;
+  margin: 1.5rem auto;
+  display: flex;
+  display: -webkit-flex;
+}
+.page .content .up_box .con_box .span_l {
+  flex: 2;
+  -webkit-flex: 2;
+  width: 100%;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #000000;
+  text-align: left;
+}
+.page .content .up_box .con_box .span_r {
+  flex: 1;
+  -webkit-flex: 1;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-align: right;
+  padding-right: .2rem;
+}
+.page .content .up_box .con_box .span_r a {
+  color: #de3f37;
+}
+.page .content .up_box .con_box .icon {
+  margin-top: -0.1rem;
+}
+.page .content .mid_box {
+  margin-top: .5rem;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: .1rem 0;
+}
+.page .content .mid_box .con_box {
+  width: 90%;
+  margin: .6rem auto;
+  display: flex;
+  display: -webkit-flex;
+  font-size: 0.85rem;
+  font-weight: 300;
+  height: 1.8rem;
+  line-height: 1.8rem;
+}
+.page .content .mid_box .con_box span {
+  flex: 1;
+  -webkit-flex: 1;
+  width: 100%;
+}
+.page .content .mid_box .con_box input {
+  flex: 3;
+  -webkit-flex: 3;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  background: #ffffff;
+  border: none;
+}
+.page .content .mid_box .con_box input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.page .content .btn_box {
+  width: 90%;
+  margin: 1.5rem auto .5rem;
+}
+.page .content .btn_box p {
+  background: #b8b8b8;
+  text-align: center;
+  padding: .8rem 0;
+  pointer-events: none;
+}
+.page .content .btn_box p a {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 300;
+}

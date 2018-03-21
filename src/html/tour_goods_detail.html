@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/tour_goods_detail.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script src="../js/swiper.min.js"></script>
+    <script type='text/javascript' src='../js/zepto.picLazyLoad.min.js'></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="../js/base.js?version=2003"></script>
+    <script src="../js/util.js?version=2003"></script>
+</head>
+<body>
+<div class="page">
+	<input type="hidden" name="status" id="status" value="1">
+	<input type="hidden" name="groupId" value="0">
+	<input type="hidden" name="sourceId" value="0">
+    <!--底部导航-->
+    <nav class="bar bar-tab">
+        <a class="tab-item tohome" href="#">
+            <span class="icon"><img src="../img/icon_tohome.png" alt=""></span>
+        </a>
+        <a class="tab-item contact external" href="https://qmjs.qiyukf.com/client?k=9596a3336f6c95b05306a3aed1dbf803&wp=1&type=1">
+            <span class="icon"><img src="../img/icon_contact.png" alt=""></span>
+        </a>
+        <a class="tab-item add_cart">
+            <span class="tab-label">
+                <span class="pri_thr"></span><br>
+                <span class="pri_beg">单独购买</span>
+            </span>
+        </a>
+        <a class="tab-item buy_now">
+            <span class="pri_one"></span><br>
+            <span class="pri_beg pri_beg_group"></span>
+        </a>
+    </nav>
+
+    <div class="content">
+        <div class="list-block">
+            <div class="swiper-container">
+                
+            </div>
+            <div class="up_box">
+                <div class="goods_detail">
+                    
+                </div>
+                <div class="goods_text"></div>
+                <div class="goods_bri"></div>
+            </div>
+            <div class="mid_box">
+                <div class="spec_num">
+                    <div class="num_title">购买数量</div>
+                    <div class="num_box">
+                        <span class="subtract">-</span>
+                        <input type="text" value="1" class="num_handle" readonly id="num_handle">
+                        <span class="add">+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tip_box">
+                <div class="tip_one">
+                    <span class="one">支持开团并邀请<span id="grouponNum"></span>人参团，人数不足自动退款</span>
+                    <span class="two alert-text"><span>拼团规则？</span></span>
+                </div>
+                <hr>
+                <div class="tip_two">
+                    <div class="one">以下小伙伴正在发起团购，您可以直接参与</div>
+                </div>
+            </div>
+            <div class="down_box">
+            
+            </div>
+            <div class="null"></div>
+            <div class="buttons-tab fixed-tab goods_info" data-offset="0">
+                <a href="#text_one" class="tab-link active button">商品介绍</a >
+                <a href="#text_two" class="tab-link button">规格参数</a >
+                <a href="#text_three" class="tab-link button">购买须知</a >
+            </div>
+            <div class="tabs">
+                <!--商品介绍-->
+                <div id="text_one" class="tab active">
+                    <div class="content-block"></div>
+                </div>
+                <!--规格参数-->
+                <div id="text_two" class="tab">
+                    <div class="content-block"></div>
+                </div>
+                <!--购买须知-->
+                <div id="text_three" class="tab">
+                    <div class="content-block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/tour_goods_detail.js?version=2003"></script>
+
+</html>

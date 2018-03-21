@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>购物车</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/shopping.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script src="../js/base.js?version=2003"></script>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- 工具栏 -->
+        <footer class="shopping-tool">
+            <div class="click1"><img src="../img/icoWeixuanze@2x.png" alt=""></div>
+            <p>
+                <span>全选</span>
+                <span class="totle_text">合计：</span>
+                <span totalPrice="0"> 0.00</span>
+            </p>
+            <button id="shanchu" class="button button-link button-nav pull-right">删除</button>
+            <div class="xia">
+                <span>下单</span>
+            </div>
+
+        </footer>
+
+        <!-- 这里是页面内容区 -->
+        <div class="content" style="padding-bottom: 50px;">
+            <div class="content-block" id="mailList">
+                <div class="content-block1">
+                    <p><span id="shoppingWarn"></span><img src="../img/icoClose@2x.png" alt=""></p>
+                    <div class="null"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="../js/shoppingcart.js?version=2003"></script>
+
+</html>

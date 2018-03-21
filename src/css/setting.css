@@ -1,0 +1,65 @@
+.page {
+  background: #f8f8f8;
+  font-family: PingFangSC-Regular !important;
+}
+.page .content .list-block {
+  margin: 0;
+}
+.page .content .list-block li {
+  width: 90%;
+  margin: 0 auto;
+}
+.page .content .list-block li a {
+  color: #000000;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.page .content .list-block li a .item-content {
+  padding-left: 0;
+}
+.page .content .list-block li a .item-content .item-inner {
+  padding: .8rem 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.page .content .list-block li a .item-content .item-inner .item-m span{
+  font-size: 0.7rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.page .content .list-block li a .item-content .item-inner .item-m #nickName {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  width: 5rem;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+.page .content .list-block li a .item-content .item-inner .item-m .head_pic {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  vertical-align: middle;
+}
+.page .content .list-block li a .item-content .item-inner .item-m .icon {
+  width: .7rem;
+  height: .7rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: .5rem;
+  margin-top: .3rem;
+}
+.page .content .list-block li a .item-content .item-inner .item-m .icon_peo{
+  position: relative;
+  right: 0;
+  top: 1.2rem;
+}
+@media(max-width:320px){
+  .list-block .item-title.label{
+    font-size: .8rem;
+  }
+}

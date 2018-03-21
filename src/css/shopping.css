@@ -1,0 +1,381 @@
+.page .shopping-tool p span:first-of-type{
+    line-height: 2.5rem;
+    position: absolute;
+    bottom: 15px;
+    font-size: 0.85rem;
+    font-weight: 300;
+    left: .1rem;
+}
+.page .shopping-tool p .totle_text{
+    padding-left:0.4rem;
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: 300;
+    bottom: 15px;
+    left: 1.5rem
+}
+.page .shopping-tool p span:last-of-type{
+    color:rgb(222,63,55);
+    position: absolute;
+    bottom: 15px;
+    left: 3.7rem;
+}
+.hover{
+    border: none;
+}
+.content-block{
+    padding: 0;
+    margin: 0;
+}
+
+.content-block1{
+    height: auto;
+    width: 100vw;
+    opacity: 0.9;
+    background-color: rgb(222, 63, 55);
+}
+.content-block1 p{
+    margin: 0;
+    font-size: 0.75rem!important;
+    line-height: 0.7rem;
+    font-weight: 300;
+    height: 1.13rem;
+    color: white;
+    padding:0.8rem 1rem;
+    position: relative;
+    text-align: center;
+}
+.content-block1 .null{
+    position: relative;
+    top: .5rem;
+    height: .5rem;
+    background: rgba(0,0,0,0.05);
+}
+.content-block1 p img{
+     width: 1rem;
+     height: 1rem;
+     position: absolute;
+     right: 0.6rem;
+     top: 0.6rem;
+}
+.list1{
+     width: 100vw;
+     height: 5rem;
+     margin-top: .5rem;
+     position: relative;
+     background-color: rgb(255, 255 ,255)
+}
+.list1:first-of-type{
+    margin-top: 0;
+}
+.list1 .list1-radio{
+     box-sizing: border-box;
+     display: inline-block;
+     position: absolute;
+     left: 0.4rem;
+     top: 1rem;
+     width: 40vw;
+     height: 80px;
+     z-index: 10;
+}
+ .list1 .list1-radio img{
+     position: relative;
+     top: 15pt;
+     height: 1rem;
+     width: 1rem;
+}
+.list1 .list1-img{
+     width: 20%;
+     display: inline-block;
+     box-sizing: border-box;
+     position: absolute;
+     vertical-align: top;
+     left: 1.8rem;
+     top: 0.6rem;
+}
+.list1 .list1-img img{
+     width:3.5rem;
+     height:3.5rem;
+     position: absolute;
+}
+.list1 .list1-wenzi{
+    box-sizing: border-box;
+    position: absolute;
+    width: calc(100vw - 5.8rem);
+    right: 0.4rem;
+    top: 0.5rem;;
+    font-size: 0.7rem!important;
+    font-weight: 300;
+
+}
+.list1 .list1-wenzi p:nth-of-type(1){
+     margin: 0;
+     min-width: 4.875rem;
+     word-break:break-all;
+     overflow: hidden;
+}
+.list1 .list1-wenzi .shangjia{
+    width: 115px!important;
+    position: absolute;
+    top: 52px;
+    height: 23px!important;
+}
+.list1 .list1-wenzi p:nth-of-type(1){
+    font-size: 0.7rem;
+    color: rgb(0,0,0);
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 2rem;
+    line-height: 1rem;
+}
+.list1 .list1-wenzi .bargain-price{
+    color: rgb( 222, 63, 55);
+    font-size: .85rem;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: -.2rem;
+}
+.list1 .list1-wenzi .add{
+     font-size: 0.75rem !important;
+     position: relative;
+     color: rgba(0,0,0,0.9);
+}
+.list1 .list1-wenzi .bar1{
+     text-decoration: line-through;
+     font-size: 0.65rem;
+     font-weight: 300;
+     position: relative;
+     right: -0.15rem;
+}
+.list1 .list1-wenzi .bar1:before{
+     text-decoration: line-through;
+}
+.list1 .list1-wenzi .bargain-price:before{
+     color: red;
+}
+
+.list1 .list1-wenzi p:nth-last-of-type(1){
+    box-shadow:0 0 1px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    margin-top: 0;
+    right: .1rem;
+}
+.list1 .list1-wenzi p.shixiao{
+    width: 40px;
+    padding-left: .4rem;
+    height: 20px !important;
+    border-radius: 2px !important;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 0.6rem!important;
+    color: white;
+    position: absolute;
+    top:55px;
+    line-height: 20px;
+}
+ .list1 .list1-wenzi .price:before{
+     content: "￥"
+}
+.list1 .list1-wenzi p span{
+     width: 40px;
+     display: inline-block;
+     line-height: 20px;
+     position: relative;
+     top: 0px;
+     text-align: center;
+}
+.list1 .list1-wenzi p span:nth-of-type(1) .jianhao{
+     width: 8pt;
+     height: 0.1rem;
+     margin: 5px auto;
+     background-color: rgb(0,0,0);
+     opacity: 0.6;
+
+}
+.list1 .list1-wenzi .num{
+     position: relative;
+     line-height: 1.3rem;
+     top: -2px;
+}
+.list1 .list1-wenzi p span:nth-of-type(2){
+    width: 40%;
+    text-align: center;
+    border: none;
+}
+.shopping-tool{
+     width: 100vw;
+     height: 2.5rem;
+     float: left;
+     position:fixed;
+     bottom: 0;
+     z-index: 10000;
+     background-color: rgb(250,250,250);
+}
+.shopping-tool .click1{
+     width: 20vw;
+     height: 2.5rem;
+     position: relative;
+     display: inline-block;
+     z-index: 20; 
+ }
+ .shopping-tool .click1 img{
+     display: block;
+    margin: 15px 10px;
+     height: 1rem;
+     width: 1rem;
+ }
+ .shopping-tool p{
+     min-width: 180px;
+     width: 50vw;
+     display: inline-block;
+     margin: 0px;
+     line-height: 2.5rem;
+     position: fixed;
+     bottom:1.75rem;
+     left: 1.6rem;
+      }
+.shopping-tool p span{
+     height: 2.5rem;
+     line-height: 2.5rem;
+     position: relative;
+     top: -15px;
+     font-size: 0.8rem;
+ }
+#list1{
+     overflow: hidden;
+}
+.shopping-tool .xia{
+     width: 65px;
+     background-color: rgb(222, 63, 55);
+     display: inline-block;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     text-align: center;
+     line-height: 2.5rem;
+     color: white;
+     font-size: .85rem;
+     font-weight: 300;
+}
+#shanchu{
+    margin-right: 65px;
+    height: 2.5rem;
+    width: 65px;
+    border: none;
+    background-color: rgb(236,236,236);
+    color: rgb(222,55,63);
+    border-radius: 0;
+    font-size: .85rem;
+    font-weight: 300;
+    padding: 0;
+}
+
+.content .spec_num .num_box{
+    overflow: hidden;
+    border: none;
+    box-shadow:0 0 0.05rem 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: flex;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+}
+.content .num_box .subtract{
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+.content .num_box .num_handle{
+    width: 40%;
+    text-align: center;
+    border: none;
+}
+.content .num_box .add{
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+.kongde{
+    width: 60vw;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+.kongde div #cart1{
+    width: 3.7rem!important;
+    height: 3.7rem;
+
+}
+.kongde p:first-of-type{
+    font-size: .8rem;
+    font-weight: 300;
+}
+.kongde p:nth-of-type(2) span{
+     color: rgb(222, 63, 55);
+     border: 0.05rem solid rgb(222, 63, 55);
+     padding: 10px 20px;
+     border-radius: 5px;
+}
+footer p span:nth-of-type(3):before{
+     content: "￥"
+}
+
+@media(min-width:410px){
+    footer,footer .xia,footer .fukuan{
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .list1 .list1-wenzi{
+        width: calc(100vw - 6rem);;
+    }
+    .list1 .list1-wenzi .shangjia{
+        top: 60px;
+        height: 25px;
+        width: 120px;
+    }
+    footer,footer .xia{
+        height: 53px;
+        line-height: 53px;
+    }
+    footer .fukuan{
+        height: 53px;
+        line-height: 53px;
+        margin-top: 13px;
+    }
+
+    .list1 .list1-wenzi .shixiao{
+        top: 75px;
+    }
+}
+
+@media(max-width:320px){
+    .content-block1 p{
+        margin-left: -1rem;
+    }
+    .page .shopping-tool p span:first-of-type{
+        font-size: .8rem;
+    }
+    .page .shopping-tool p .totle_text{
+        font-size: .7rem;
+    }
+    .shopping-tool .xia{
+        font-size: .8rem;
+    }
+    .list1 .list1-wenzi .shangjia{
+        width: 110px;
+        top: 55px;
+    }
+
+}

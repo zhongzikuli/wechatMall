@@ -1,0 +1,76 @@
+.page {
+  background: #f8f8f8;
+  font-family: PingFangSC-Regular !important;
+}
+.page .content .list-block {
+  margin: 0;
+}
+.page .content .list-block ul li .item-content .item-inner {
+  padding-right: 0;
+}
+.page .content .list-block ul li .item-content .item-inner .item-title.label {
+  width: 20%;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input {
+  width: 60%;
+  position: relative;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input input {
+  font-size: 0.85rem;
+}
+.page .content .list-block ul li .item-content .item-inner .item-input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+.page .content .list-block ul li .item-content .item-inner .code_btn {
+  width: 20%;
+  padding-left: 1.4rem;
+  margin-top: .2rem;
+}
+.page .content .list-block ul li .item-content .item-inner .code_btn img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.page .content .btn_box {
+  background: #de3f37;
+  width: 90%;
+  margin: 1rem auto 0;
+  text-align: center;
+  color: #ffffff;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-weight: 300;
+}
+@media screen and (max-width: 320px) {
+  .page .content .list-block ul li .item-content .item-inner .item-title.label {
+    font-size: 0.75rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .item-input input {
+    font-size: 0.75rem;
+  }
+  .page .content .btn_box {
+    font-size: 0.75rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .code_btn {
+    padding-left: .1rem;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 374px) {
+  .page .content .list-block ul li .item-content .item-inner .item-title.label {
+    font-size: 0.8rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .item-input input {
+    font-size: 0.8rem;
+  }
+  .page .content .btn_box {
+    font-size: 0.8rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+  }
+  .page .content .list-block ul li .item-content .item-inner .code_btn {
+    padding-left: 1.2rem;
+  }
+}

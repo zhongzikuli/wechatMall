@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>搜索商品结果</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../css/sm.min.css">
+		<link rel="stylesheet" href="../css/search_result.css?version=2003">
+		<script type='text/javascript' src='../js/zepto.min.js'></script>
+		<script type='text/javascript' src='../js/sm.min.js'></script>
+		<script type='text/javascript' src='../js/base.js?version=2003'></script>
+	</head>
+
+	<body>
+		<!--第一页搜索商品找到结果页面-->
+		<div class="page" id="page-ptr">
+			<!--搜索按钮-->
+
+			<div class="bar bar-header-secondary">
+				<form action="">
+					<div class="searchbar">
+						<div class="search-input">
+							<label class="icon icon-search" for="search"></label>
+							<input type="search" id='search_goods' placeholder='搜索商品' />
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!--搜索商品列表-->
+			<div class="content" id="showdiv1" style="display:block">
+				<div class="buttons-tab">
+					<a class="tab-link active button" id="tab_zh">综合</a>
+					<a class="tab-link button" id="tab_xl">销量</a>
+					<a class="tab-link button" id="tab_fh">积分</a>
+					<a class="tab-link button" id="tab_jg">价格</a>
+				</div>
+				<div class="content-block infinite-scroll infinite-scroll-bottom">
+					<div class="con-block">
+						<ul class="list_container">
+							<!--<li>
+								<a href="goods_detail.html?onlineId=108&amp;version=2000" class="item-link list-button external" data-transition="slide-in">
+									<div class="selling_pic"><img src="http://qmjsgood.b0.upaiyun.com/20170213/dab741f5fbda3aff974dad87130275aa.jpg!s">
+										<div class="selling_icon"><img src="../img/icon_temai.png" alt=""></div>
+									</div>
+									<div class="selling_text">
+										<div class="selling_title">【核】COSTA咖世家曲奇饼干100元代金券</div>
+										<div class="selling_price">
+											<div class="pri_l">
+												<p>¥<span class="pri_one">1999</span>
+													<s>¥<span class="pri_two">2999</span></s>
+												</p>
+											</div>
+											<div class="pri_r">送积分:<span>1999</span></div>
+										</div>
+										<div class="go_buy">
+											<div class="sur_l">
+												<p class="surplus" status="1" totalstock="50" stock="44"><span class="span_f" style="width:3.96rem;border-radius: 8px 0 0 8px"></span><span class="span_s">剩余<span>44</span>个</span>
+												</p>
+											</div>
+											<div class="sur_r">立即抢<img src="../img/icoJiantou1.png"></div>
+										</div>
+									</div>
+								</a>
+							</li>-->
+						</ul>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content" id="showdiv2" style="display:none">
+				<div class="content-block">
+					<div class="found_none">
+						<img src="../img/found_none.png" alt="">
+						<p>您寻找的商品还未上架</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script type='text/javascript' src='../js/search_result.js?version=2003'></script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>拼团</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/tour.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script type='text/javascript' src='../js/base.js?version=2003'></script>
+</head>
+<body>
+    <div class="page" id="page-ptr">
+        <!--底部导航-->
+        <nav class="bar bar-tab">
+            <a id="tohome" class="tab-item home" href="#" data-transition='slide-in'>
+                <span class="icon"><img src="../img/icoHome@2x.png" alt="首页"></span>
+                <span class="tab-label">首页</span>
+            </a>
+            <a id="toshop" class="tab-item shop" href="#" data-transition='slide-in'>
+	            <span class="icon"><img src="../img/icon_shop@2x.png" alt="店铺"></span>
+	            <span class="tab-label">店铺</span>
+	        </a>
+            <a class="tab-item active tour" href="#">
+                <span class="icon"><img src="../img/icoShangxinActi@2x.png" alt="拼团"></span>
+                <span class="tab-label">拼团</span>
+            </a>
+            <a id="totype" class="tab-item classify" href="#" data-transition='slide-in'>
+                <span class="icon"><img src="../img/icoFenlei@2x.png" alt="分类"></span>
+                <span class="tab-label">分类</span>
+            </a>
+            <a id="tome" class="tab-item me" href="#" data-transition='slide-in'>
+                <span class="icon"><img src="../img/icoMe@2x.png" alt="我的"></span>
+                <span class="tab-label">我的</span>
+            </a>
+        </nav>
+
+        <div class="content infinite-scroll infinite-scroll-bottom" data-distance="100">
+            <div class="list-block">
+                <ul class="list_box">
+                   
+                </ul>
+            </div>
+
+            <!-- 加载提示符 -->
+            <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type='text/javascript' src="../js/tour.js?version=2003"></script>
+</html>

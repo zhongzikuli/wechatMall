@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/credit_goods_detail.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script type='text/javascript' src='../js/zepto.picLazyLoad.min.js'></script>
+    <script src="../js/swiper.min.js"></script>
+</head>
+<body>
+    <div class="page">
+        <nav class="bar bar-tab">
+            <a class="tab-item credit_num">
+                <span class="tab-label">当前积分：<span id="exchange"></span></span>
+            </a>
+            <!--积分够显示-->
+            <a class="tab-item go_pay" href="#">
+                <span class="tab-label">去兑换</span>
+            </a>
+            <!--已兑完 不可点击-->
+            <a class="tab-item no_pay" href="#">
+                <span class="tab-label">已兑完</span>
+            </a>
+            <!--积分不够显示 不可点击-->
+            <a class="tab-item no_credit" href="#">
+                <span class="tab-label">积分不足</span>
+            </a>
+        </nav>
+        <div class="content">
+
+            <div class="swiper-container">
+
+            </div>
+
+            <div class="mid_box">
+
+            </div>
+
+            <!--后台传输数据-->
+            <div class="buttons-tab goods_info">
+                <a href="#text_one" class="tab-link active button">商品介绍</a >
+                <a href="#text_two" class="tab-link button">规格参数</a >
+                <a href="#text_three" class="tab-link button">购买须知</a >
+            </div>
+            <div class="tabs">
+                <!--商品介绍-->
+                <div id="text_one" class="tab active">
+                    <div class="content-block text_goods"></div>
+                </div>
+                <!--规格参数-->
+                <div id="text_two" class="tab">
+                    <div class="content-block parameter"></div>
+                </div>
+                <!--购买须知-->
+                <div id="text_three" class="tab">
+                    <div class="content-block to_know"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/base.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/order_util.js"></script>
+<script src="../js/credit_goods_detail.js"></script>
+</html>

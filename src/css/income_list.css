@@ -1,0 +1,71 @@
+.page {
+  background: #f7f7f7;
+  font-family: "PingFangSC-Regular" !important;
+}
+.page .content {
+  margin-top: -0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.page .content .income_box {
+  width: 90%;
+  margin: 0 auto;
+}
+.page .content .income_box ul {
+  list-style: none;
+  padding-left: 0;
+}
+.page .content .income_box ul li {
+  display: flex;
+  display: -webkit-flex;
+  padding: .5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+.page .content .income_box ul li .div_l {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.page .content .income_box ul li .div_l img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.page .content .income_box ul li .div_m {
+  margin-left: .5rem;
+  flex: 5;
+  -webkit-flex: 5;
+}
+.page .content .income_box ul li .div_m p {
+  margin: 0;
+  color: #000000;
+  font-weight: 300;
+  width: 100%;
+}
+.page .content .income_box ul li .div_m .name {
+  font-size: 0.8rem;
+  width: 7.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page .content .income_box ul li .div_m .time {
+  font-size: 0.65rem;
+}
+.page .content .income_box ul li .div_r {
+  flex: 3;
+  -webkit-flex: 3;
+  text-align: right;
+  margin-top: .1rem;
+}
+.page .content .income_box ul li .div_r p {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 300;
+  width: 100%;
+}
+@media(max-width: 320px){
+  .page .content .income_box ul li .div_m{
+    margin-left: .8rem;
+  }
+}

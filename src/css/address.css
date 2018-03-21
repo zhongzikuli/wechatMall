@@ -1,0 +1,220 @@
+.page .bar{
+    background: rgb(250,250,250) !important;
+}
+.page nav footer{
+    width:100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    height: 2.5rem;
+    text-align: center;
+    font-size: .85rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+.page nav footer button{
+    border: none;
+    flex: 1;
+    -webkit-flex: 1;
+    font-size: .85rem;
+    font-weight: 300;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: rgb(222,63,55);
+}
+.page nav footer #baocun{
+    background: rgb(222,63,55);
+    border-radius: 0;
+    color: rgb(255,255,255);
+    font-size: .85rem;
+    font-weight: 300;
+    height: 2.5rem;
+}
+.content-block{
+    margin: 0;
+    padding: 0;
+}
+.hover{
+    font-size: 1.13rem;
+    color: rgba( 0,0,0,0.8);
+}
+.address{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding:0.9rem 0 1rem;
+}
+.address .address-div p{
+    margin-top: -.2rem !important;
+}
+.address .address-div p .addressAttr{
+    font-size: .65rem;
+    font-weight: 300;
+    margin-left: -2rem;
+    width: 56%;
+    margin-top: .2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.modal-button{
+    color: rgb(222,63,55);
+    background-color: rgba( 0,0,0,0.8);
+    border: 0.05rem solid rgba(255, 255, 255, 0.19);
+}
+.modal-text{
+    color: rgba( 255, 255, 255,1);
+    font-size: .8rem;
+    font-weight: 300;
+}
+.modal-inner{
+    background-color: rgba( 0,0,0,0.8);
+    border: 0.05rem solid rgba(255, 255, 255, 0.19);
+}
+.addressName{
+    font-size:.85rem;
+    font-weight: 300;
+}
+#addressPhoneNo{
+    font-size: .75rem;
+    margin-left: -2rem;
+}
+#moren {
+     border:0.05rem solid rgb(222, 63, 55);
+     color:rgb(222, 63, 55);
+    font-size: .65rem;
+}
+.modal-button:after {
+    width: 0;
+}
+ .attr{
+     display: inline-block;
+     max-width: 15rem;
+     width: 45%;
+     height: 2.33rem;
+     size: 0.8rem;
+     line-height: 1.16rem;
+     position: absolute;
+     left: 5.86rem;
+}
+.bianji{
+    position: absolute;
+    color: rgb(222, 63, 55);
+    right: .1rem;
+    z-index: 1000;
+    top: 2.1rem;
+    font-size: .75rem;
+    font-weight: 300;
+}
+
+
+.list-block,.item-inner{
+    margin: 0!important;
+    position: relative;
+}
+.list-block ul li .item-content .item-inner .item-input input{
+    rgb(0,0,0)
+}
+.list-block ul li .item-content .item-inner .item-input input::-webkit-input-placeholder{
+    color: rgba(0,0,0,0.3);
+    font-size: .85rem;
+    font-weight: 300;
+}
+.list-block ul li .item-content .item-inner .item-input #address{
+    overflow: hidden;
+    padding-right: .2rem;
+}
+.list-block ul li .item-content .item-inner .set_address{
+    font-size: .8rem;
+    font-weight: 300;
+    color: rgba(0,0,0,0.4);
+}
+.list-block div #baocun{
+    border-radius:1pt;
+    width:calc(100% - 1.6rem);
+    height:42pt;
+    line-height:42pt;
+    margin:0 0.8rem;
+    background-color:rgb(222, 63, 55);
+    color:rgb(255,255,255);
+    font-size: .85rem;
+    font-weight: 300;
+    text-align:center;
+}
+#shanchu{
+    color: rgba(  0, 0, 0,0.3);
+
+}
+#set_address{
+    line-height: 3.33rem;
+    width: 60vw;
+    margin: 0.1rem auto;
+    text-align: center;
+    height: 3.33rem;
+    color: rgba(  0, 0, 0,0.4);
+}
+#city-picker{
+    width: 70vw;
+    display: inline-block;
+}
+#xuanze{
+    width: 0.8rem;
+    position: absolute;
+    top: 1.46rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.list-block .item-inner::after{
+    width: 98%;
+}
+hr{
+    margin: 0 auto;
+    width: 90vw;
+    padding: 0;
+    height: 0.1rem;
+    opacity: 0.1;
+}
+#set_address img{
+    width: 1.06rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+@media(min-width:400px){
+    footer{
+        height: 55px;
+        line-height: 55px;
+    }
+}
+@media(min-width:480px){
+    footer{
+        height: 64px;
+        line-height: 64px;
+    }
+    #xuanze{
+        top: 1.5rem;
+    }
+}
+@media(max-width:320px){
+    .list-block .item-input input{
+        font-size: .8rem;
+        height: 3rem;
+    }
+    #set_address{
+        height: 3rem;
+    }
+    .addressName{
+        font-size: .8rem;
+    }
+    .page nav footer{
+        font-size: .8rem;
+    }
+}
+

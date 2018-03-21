@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>搜索商品结果</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../css/sm.min.css">
+		<link rel="stylesheet" href="../css/search_result.css?version=2003">
+		<script type='text/javascript' src='../js/zepto.min.js'></script>
+		<script type='text/javascript' src='../js/sm.min.js'></script>
+		<script type='text/javascript' src='../js/base.js?version=2003'></script>
+	</head>
+
+	<body>
+		<!--第一页搜索商品找到结果页面-->
+		<div class="page" id="page-ptr">
+			<!--搜索按钮-->
+
+			<div class="bar bar-header-secondary">
+				<form action="">
+					<div class="searchbar">
+						<div class="search-input">
+							<label class="icon icon-search" for="search"></label>
+							<input type="search" id='search_goods' placeholder='搜索商品' />
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!--搜索商品列表-->
+			<div class="content" id="showdiv1" style="display:block">
+				<div class="buttons-tab">
+					<a class="tab-link active button" id="tab_zh">综合</a>
+					<a class="tab-link button" id="tab_xl">销量</a>
+					<a class="tab-link button" id="tab_fh">积分</a>
+					<a class="tab-link button" id="tab_jg">价格</a>
+				</div>
+				<div class="content-block infinite-scroll infinite-scroll-bottom">
+					<div class="con-block">
+						<ul class="list_container">
+							
+						</ul>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content" id="showdiv2" style="display:none">
+				<div class="content-block">
+					<div class="found_none">
+						<img src="../img/found_none.png" alt="">
+						<p>您寻找的商品还未上架</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script type='text/javascript' src='../js/ws_search_result.js?version=2003'></script>
+</html>

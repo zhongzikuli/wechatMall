@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>店铺</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/ws_manage_shop.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script type='text/javascript' src="../js/base.js?version=2003"></script>
+</head>
+<body>
+<div class="page" id="page-ptr">
+    <!--底部导航-->
+    <nav class="bar bar-tab">
+        <a id="tohome" class="tab-item home" href="#">
+            <span class="icon"><img src="../img/icoHome@2x.png" alt="首页"></span>
+            <span class="tab-label">首页</span>
+        </a>
+        <a id="toshop" class="tab-item active shop" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icon_shop_active@2x.png" alt="店铺"></span>
+            <span class="tab-label">店铺</span>
+        </a>
+        <a id="totour" class="tab-item tour" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoShangxin@2x.png" alt="拼团"></span>
+            <span class="tab-label">拼团</span>
+        </a>
+        <a id="totype" class="tab-item classify" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoFenlei@2x.png" alt="分类"></span>
+            <span class="tab-label">分类</span>
+        </a>
+        <a id="tome" class="tab-item me" href="#" data-transition='slide-in'>
+            <span class="icon"><img src="../img/icoMe@2x.png" alt="我的"></span>
+            <span class="tab-label">我的</span>
+        </a>
+    </nav>
+
+    <div class="content">
+        <div class="up_box">
+            <div class="box_l">
+                <div class="img_box">
+                    <img src="" alt="" id="input_image">
+                </div>
+            </div>
+
+            <div class="box_m">
+                <div class="ship_box">
+                    <span id="input_level"></span>
+                    <span id="input_sname"></span>
+                </div>
+            </div>
+            <div class="box_r"><img src="../img/img_dian@2x.png" alt=""></div>
+        </div>
+
+        <div class="content-block selling_box infinite-scroll infinite-scroll-bottom" id="content-block1" >
+            <!-- 下面是正文 -->
+            <div class="con-block">
+                <ul class="list_container">
+
+                </ul>
+            </div>
+
+            <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+            </div>
+        </div>
+
+        <!--店铺里没有商品-->
+        <div class="content-block2" id="content-block2" style="display: none">
+            <div class="con-block">
+                <img src="../img/icon_nothing@2x.png" alt="">
+                <p>店长尚未上架商品！</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script type='text/javascript' src="../js/ws_shop.js?version=2003"></script>
+</html>

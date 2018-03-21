@@ -1,0 +1,209 @@
+.page {
+  background: #f8f8f8;
+  font-family: PingFangSC-Regular !important;
+  overflow-x: hidden !important;
+  overflow-y: auto;
+}
+.page .bar-tab {
+  background: #fa5652;
+}
+.page .bar-tab .tab-item .tab-label {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+.page .bar-tab .more {
+  background: #f9ae39;
+}
+.page .content .list-block {
+  margin: 0;
+}
+.page .content .list-block .swiper-container .swiper-wrapper img {
+  width: 100%;
+  height: 11rem;
+}
+.page .content .list-block .swiper-container-horizontal > .swiper-pagination-bullets,
+.page .content .list-block .swiper-pagination-custom,
+.page .content .list-block .swiper-pagination-fraction {
+  bottom: .5rem;
+}
+.page .content .list-block .up_box {
+  margin-top: -0.5rem;
+  width: 100%;
+  padding: .2rem 2.5% .5rem;
+  background: #ffffff;
+}
+.page .content .list-block .up_box .goods_detail {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  margin-top: .8rem;
+  padding-bottom: .2rem;
+}
+.page .content .list-block .up_box .goods_detail .tour_num {
+  flex: 2;
+  -webkit-flex: 2;
+  color: #fa5652;
+  font-size: 1.2rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  margin-top: -0.6rem;
+  margin-left: -2.4rem;
+  text-align: center;
+  border: 1px solid #fa5652;
+}
+.page .content .list-block .up_box .goods_detail .tour_pri {
+  margin-left: .8rem;
+  flex: 3;
+  -webkit-flex: 3;
+  font-size: 0.6rem;
+  margin-top: -0.3rem;
+}
+.page .content .list-block .up_box .goods_detail .tour_pri .pri_one {
+  color: #de3f37;
+}
+.page .content .list-block .up_box .goods_detail .tour_pri .pri_one span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.page .content .list-block .up_box .goods_detail .tour_pri .pri_two {
+  margin-left: .6rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.7rem;
+}
+.page .content .list-block .up_box .goods_detail .tour_bri {
+  flex: 3;
+  -webkit-flex: 3;
+  text-align: right;
+  color: #9e9e9e;
+  font-size: 0.65rem;
+  height: 1rem;
+  line-height: 1rem;
+  margin-top: .2rem;
+}
+.page .content .list-block .up_box .goods_text {
+  margin-top: .2rem;
+  color: #000000;
+  font-size: 0.8rem;
+  overflow: hidden;
+  display: -webkit-box !important;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-weight: 300;
+  height: 1.85rem;
+  line-height: .95rem;
+}
+.page .content .list-block .up_box .goods_bri {
+  margin-top: .5rem;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: #9e9e9e;
+  overflow-x: hidden !important;
+  overflow-y: auto;
+}
+.page .content .list-block .mid_box {
+  margin-top: .5rem;
+  width: 100%;
+  padding: 1rem 14% .8rem;
+  background: #ffffff;
+  text-align: center;
+}
+.page .content .list-block .mid_box .pic_box {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.page .content .list-block .mid_box .pic_box div {
+  flex: 2;
+  -webkit-flex: 2;
+}
+.page .content .list-block .mid_box .pic_box div img {
+  width: 2.5rem;
+  z-index: 1;
+  height: 2.5rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.page .content .list-block .mid_box .pic_box .tourer {
+  flex: 3;
+  -webkit-flex: 3;
+  position: relative;
+  text-align: left;
+}
+.page .content .list-block .mid_box .pic_box .tourer span {
+  color: #ffffff;
+  font-size: 0.65rem;
+  background: #ffb724;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 0 0.2rem;
+  position: relative;
+  top: -2rem;
+  z-index: 999;
+  right: .8rem;
+}
+.page .content .list-block .mid_box .pic_box .toured {
+  margin-left: -0.5rem;
+}
+.page .content .list-block .mid_box .text_box {
+  margin-top: .2rem;
+  font-size: 0.65rem;
+  color: #3f3f3f;
+}
+.page .content .list-block .mid_box .text_box .span_f {
+  color: #fc1a1a;
+  margin: 0 0.1rem;
+}
+.page .content .list-block .mid_box .text_box .span_s {
+  background: #f9ae39;
+  padding: 0 0.2rem;
+  margin: 0 0.1rem;
+}
+@media screen and (max-width: 320px) {
+  .page .content .list-block .up_box .goods_detail {
+    margin-top: .5rem;
+    padding-bottom: 0;
+  }
+  .page .content .list-block .up_box .goods_detail .tour_num {
+    margin-left: -2rem;
+  }
+  .page .content .list-block .up_box .goods_text {
+    font-size: .75rem;
+  }
+  .page .content .list-block .up_box .goods_bri {
+    font-size: .65rem;
+  }
+  .page .content .list-block .mid_box {
+    padding: .8rem 10%;
+  }
+  .page .content .list-block .mid_box .pic_box div img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .page .content .list-block .mid_box .pic_box .tourer {
+    flex: 4;
+    -webkit-flex: 4;
+  }
+  .page .content .list-block .mid_box .pic_box .tourer span {
+    right: 1rem;
+    top: -1.9rem;
+    font-size: .55rem;
+    padding: 0 0.1rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .page .content .list-block .mid_box {
+    padding: 1rem 12% .8rem;
+  }
+  .page .content .list-block .mid_box .pic_box div img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

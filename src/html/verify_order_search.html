@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>订单查询</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/order_search.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+    <script type='text/javascript' src='../js/sm.min.js'></script>
+    <script type='text/javascript' src="../js/base.js?version=2003"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="content">
+            <div class="list-block">
+                <ul>
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-name"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">日期起</div>
+                                <div class="item-input">
+                                    <input type="text" id="startTime" data-toggle='date' placeholder="请选择查询订单开始时间" class="date date_start">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-email"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">日期止</div>
+                                <div class="item-input">
+                                    <input type="text" id="endTime" data-toggle='date' placeholder="请选择查询订单结束时间" class="date date_end">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-password"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">商品名</div>
+                                <div class="item-input">
+                                    <input type="text" id="showName" placeholder="请输入查询商品名称" class="goods_name">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_box">查询</div>
+
+            <div class="order_list" style="display:none">
+                <div class="null"></div>
+                <div class="infor">尊敬的<span class="offline_name">商家名称</span>，
+                    在<span class="date_start">2017-01-01</span>
+                    至<span class="date_end">2017-01-07</span>期间，
+                    您的<span class="goods_name">商品名称</span>的订单情况:</div>
+                <div class="up_box">
+                    <div class="up_l">
+                        <span>成交订单：</span><br>
+                        <span>核销订单：</span>
+                    </div>
+                    <div class="up_r">
+                        <span class="success_num">0单</span><br>
+                        <span class="verification_num">0单</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/verify_order_search.js?version=2003"></script>
+</html>

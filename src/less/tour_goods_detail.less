@@ -1,0 +1,414 @@
+@bg_color: rgb(248,248,248);
+@w_color: rgb(255,255,255);
+@r_color: rgb(222,63,55);
+@b_color: rgb(0,0,0);
+@g_color: rgba(0,0,0,0.4);
+@font_weight: 300;
+@xs_font: .6rem;
+@s_font: .65rem;
+@n_font: .7rem;
+@m_font: .75rem;
+@l_font: .8rem;
+@xl_font: .85rem;
+@b_font: .9rem;
+
+.page{
+  background: @bg_color;
+  font-family: PingFangSC-Regular !important;
+  overflow-x:hidden !important;
+  overflow-y:auto;
+  .bar-tab{
+    display: -webkit-flex;
+    display: flex;
+    line-height: 2.5rem;
+    font-size: @m_font;
+    font-weight: 300;
+    .tab-item{
+      line-height: 1rem;
+      color: @w_color;
+      text-align: center;
+      .icon{
+        img{
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+    }
+    .tohome,
+    .contact{
+      flex: 2;
+      -webkit-flex: 2;
+      height: 1.8rem !important;
+      line-height: 1.8rem;
+      margin-top: .35rem;
+    }
+    .tohome{
+      border-right: 1px solid #c6c6c6;
+    }
+    .add_cart,
+    .buy_now{
+      flex: 5;
+      -webkit-flex: 5;
+      background: #f9ae39;
+      padding-top: .25rem;
+    }
+    .buy_now{
+      background: #fa5652;
+    }
+  }
+  .content{
+    .list-block{
+      margin: 0;
+      .swiper-container{
+        .swiper-wrapper{
+          img{
+            width: 100%;
+            height: 11rem;
+          }
+        }
+      }
+      .swiper-container-horizontal>.swiper-pagination-bullets,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction{
+        bottom: .5rem;
+      }
+      .up_box{
+        margin-top: -0.5rem;
+        width: 100%;
+        padding: .2rem 2.5% .5rem;
+        background: @w_color;
+        .goods_detail{
+          display: flex;
+          display: -webkit-flex;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+          margin-top: .8rem;
+          padding-bottom: .2rem;
+          .tour_num{
+            flex: 2;
+            -webkit-flex: 2;
+            color: #fa5652;
+            font-size: 1.2rem;
+            height: 1.6rem;
+            line-height: 1.6rem;
+            transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+            margin-top: -.6rem;
+            margin-left: -2.4rem;
+            text-align: center;
+            border: 1px solid #fa5652;
+          }
+          .tour_pri{
+            margin-left: .8rem;
+            flex: 3;
+            -webkit-flex: 3;
+            font-size: @xs_font;
+            margin-top: -.3rem;
+            .pri_one{
+              color: @r_color;
+              span{
+                font-size: 1.2rem;
+                font-weight: 600;
+              }
+            }
+            .pri_two{
+              margin-left: .6rem;
+              color: @g_color;
+              font-size: @n_font;
+            }
+          }
+          .tour_bri{
+            flex: 3;
+            -webkit-flex: 3;
+            text-align: right;
+            color: #9e9e9e;
+            font-size: @s_font;
+            height: 1rem;
+            line-height: 1rem;
+            margin-top: .2rem;
+          }
+        }
+        .goods_text{
+          margin-top: .2rem;
+          color: @b_color;
+          font-size: @l_font;
+          overflow: hidden;
+          display: -webkit-box !important;
+          text-overflow: ellipsis;
+          word-break: break-all;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          font-weight: 300;
+          height: 1.85rem;
+          line-height: .95rem;
+        }
+        .goods_bri{
+          margin-top: .5rem;
+          font-size: @n_font;
+          font-weight: 300;
+          color: #9e9e9e;
+          overflow-x:hidden !important;
+          overflow-y:auto;
+        }
+      }
+      .mid_box{
+        margin-top: .5rem;
+        width: 100%;
+        padding: 0 2.5%;
+        background: @w_color;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        .spec_num{
+          display: flex;
+          display: -webkit-flex;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+          .num_title{
+            width: 60%;
+            text-align: left;
+            font-size: @m_font;
+          }
+          .num_box{
+            width: 30%;
+            box-shadow:0 0 1px 0 rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: nowrap;
+            -webkit-flex-wrap: nowrap;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            margin-top: .65rem;
+            .subtract{
+              flex: 1;
+              -webkit-flex: 1;
+              text-align: center;
+              border-right: 1px solid rgba(0, 0, 0, 0.5);
+            }
+            .num_handle{
+              width: 40%;
+              text-align: center;
+              border: none;
+              height: 1.2rem;
+              line-height: 1.2rem;
+              padding: 0;
+            }
+            .add{
+              flex: 1;
+              -webkit-flex: 1;
+              text-align: center;
+              border-left: 1px solid rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+      }
+      .tip_box{
+        width: 100%;
+        padding: .5rem 2.5%;
+        font-size: @xs_font;
+        color: #9f9f9f;
+        .tip_one{
+          .one{
+            span{
+              color: #3e3e3e;
+              margin: 0 0.05rem;
+            }
+          }
+          .two{
+            position: absolute;
+            right: .4rem;
+            span{
+              padding: 0.05rem 0.05rem 0.05rem 0.15rem;
+              text-align: center;
+              box-shadow:0 0 1px 0 #f8a525;
+              color: #f8a525;
+              border-radius: 5px;
+              -webkit-border-radius: 5px;
+            }
+          }
+        }
+      }
+      .down_box{
+        width: 100%;
+        padding: .4rem 2.5% 0;
+        background: @w_color;
+        .box_info{
+          display: flex;
+          display: -webkit-flex;
+          padding-bottom: .5rem;
+          .box_pic{
+            text-align: right;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            border: 1px solid #979797;
+            box-sizing: content-box;
+            img{
+              width: 2.5rem;
+              height: 2.5rem;
+              border-radius: 100%;
+              -webkit-border-radius: 100%;
+            }
+          }
+          .box_name{
+            flex: 4;
+            -webkit-flex: 4;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-between;
+            -webkit-justify-content: space-between;
+            height: 2rem;
+            border-top: 1px solid #979797;
+            border-bottom: 1px solid #979797;
+            font-size: @xs_font;
+            margin-top: .25rem;
+            margin-left: -.5rem;
+            .name_l{
+              flex: 1;
+              -webkit-flex: 1;
+              text-align: left;
+              padding-left: 1rem;
+              .name{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: @n_font;
+                width: 5rem;
+                margin: 0;
+              }
+              .city{
+                color: #9a9a9a;
+                position: relative;
+              }
+            }
+            .name_r{
+              padding-right: .8rem;
+              text-align: right;
+              flex: 1;
+              -webkit-flex: 1;
+              height: 2rem;
+              line-height: 1rem;
+              .num{
+                color: #fa5652;
+              }
+              .time{
+                color: #9a9a9a;
+              }
+            }
+          }
+          .box_go{
+            text-align: center;
+            flex: 1;
+            -webkit-flex: 1;
+            background: #fa5652;
+            font-size: @l_font;
+            font-weight: 300;
+            height: 2rem;
+            line-height: 2rem;
+            margin-top: .25rem;
+            color: @w_color;
+            border-radius: 0 20px 20px 0;
+            -webkit-border-radius:  0 20px 20px 0;
+          }
+        }
+      }
+      .null{
+        height: .5rem;
+        width: 100%;
+      }
+      .goods_info{
+        background: @w_color;
+        .tab-link{
+          font-size: .8rem;
+          font-weight: 300;
+          color: rgb(0,0,0);
+        }
+        .active{
+          border-bottom: 2px solid rgb(222,63,55);
+        }
+      }
+      .tabs{
+        .tab{
+          overflow-x:hidden !important;
+          overflow-y:auto;
+          padding: 0 2px;
+          .content-block{
+            margin-top: .5rem;
+            padding: 0;
+            overflow-x:hidden !important;
+            overflow-y:auto;
+          }
+        }
+      }
+    }
+  }
+}
+.modal.modal-in{
+  margin-top: -15rem !important;
+  .model-inner{
+    padding: 0.5rem 0.5rem 0;
+    .model-text{
+      p{
+        margin: .5rem 0 !important;
+      }
+    }
+  }
+}
+.modal-title,
+.modal-button.modal-button-bold{
+  color: #f9ae39;
+}
+
+@media(max-width: 320px){
+  .page .bar-tab .tab-item{
+    font-size: .7rem;
+  }
+  .page .content .list-block .up_box .goods_detail{
+    margin-top: .5rem;
+    padding-bottom: 0;
+  }
+  .page .content .list-block .up_box .goods_detail .tour_num{
+    margin-left: -2rem;
+  }
+  .page .content .list-block .up_box .goods_text{
+    font-size: .75rem;
+  }
+  .page .content .list-block .up_box .goods_bri{
+    font-size: .65rem;
+  }
+  .page .content .list-block .tip_box{
+    font-size: .55rem;
+    padding: .5rem 2%;
+  }
+  .page .content .list-block .tip_box .tip_one .two{
+    right: 0.35rem;
+  }
+  .page .content .list-block .down_box .box_info .box_name .name_l{
+    flex: 2;
+    -webkit-flex: 2;
+  }
+  .page .content .list-block .down_box .box_info .box_name .name_l .name{
+    width: 4rem;
+  }
+  .page .content .list-block .down_box .box_info .box_name .name_r{
+    flex: 3;
+    -webkit-flex: 3;
+    padding-right: .5rem;
+  }
+  .page .content .list-block .down_box .box_info .box_go{
+    font-size: .7rem;
+  }
+  .page .content .list-block .goods_info .tab-link{
+    font-size: .7rem;
+  }
+  .modal-title+.modal-text{
+    font-size: .7rem;
+  }
+  .modal.modal-in{
+    margin-top: -11.5rem !important;
+  }
+}

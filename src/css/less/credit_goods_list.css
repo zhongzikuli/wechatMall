@@ -1,0 +1,91 @@
+.page {
+  background: #f8f8f8;
+  font-family: PingFangSC-Regular !important;
+}
+.page .content {
+  width: 94%;
+  margin: .5rem auto 0;
+}
+.page .content .list-block {
+  margin: 0;
+}
+.page .content .list-block .list-box {
+  background: #f8f8f8;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.page .content .list-block .list-box li {
+  width: 48.5%;
+  margin-right: 3%;
+  margin-bottom: .5rem;
+  background: #ffffff;
+}
+.page .content .list-block .list-box li a .goods_pic img {
+  width: 100%;
+  height: 8.5rem;
+}
+.page .content .list-block .list-box li a .goods_text {
+  padding: 0 0 0 0.2rem;
+  color: #4e4e4e;
+  font-size: .75rem;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page .content .list-block .list-box li a .goods_price {
+  margin: .7rem 0;
+  padding: 0 0.2rem 0 0.2rem;
+  font-size: .65rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  position: relative;
+}
+.page .content .list-block .list-box li a .goods_price .pri_num {
+  width: 45%;
+  text-align: left;
+  color: #de3f37;
+}
+.page .content .list-block .list-box li a .goods_price .go_pay {
+  width: 85%;
+  text-align: center;
+  background: #de3f37;
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-top: -1.5rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  position: absolute;
+  right: .25rem;
+}
+.page .content .list-block .list-box li .over .goods_price .pri_num {
+  color: #b4b4b4;
+}
+.page .content .list-block .list-box li .over .goods_price .go_pay {
+  background: #f8f8f8;
+  color: #c8c8c8;
+}
+.page .content .list-block .list-box li:nth-child(2n) {
+  margin-right: 0;
+}
+@media (max-width: 320px) {
+  .page .content .list-block .list-box li a .goods_pic img {
+    height: 8rem;
+  }
+  .page .content .list-block .list-box li a .goods_text {
+    font-size: .7rem;
+    font-weight: 300;
+  }
+}

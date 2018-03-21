@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>提现到银行卡</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/bind_card.css?version=2003">
+    <script type='text/javascript' src='../js/zepto.min.js'></script>
+	<script type='text/javascript' src='../js/sm.min.js'></script>
+	<script type='text/javascript' src='../js/base.js?version=2003'></script>
+</head>
+<body>
+<div class="page">
+    <div class="content">
+        <div class="up_box">
+            <div class="con_box" id="toBind">
+                <span class="span_l">尚未绑定银行卡</span>
+                <span class="span_r"><a href="">立即绑定</a></span>
+                <span class="icon icon-right"></span>
+            </div>
+        </div>
+        <div class="mid_box">
+            <div class="con_box">
+                <span>提现金额</span>
+                <input type="text" placeholder="可转金额0元" class="draw_num">
+            </div>
+        </div>
+        <div class="btn_box">
+            <p><a href="#" id="toDraw">立即提现</a></p>
+        </div>
+    </div>
+</div>
+</body>
+<script type='text/javascript'>
+var custId=0;
+var userType=0;
+$(function () {
+	custId = getLocalSession("custId") || "0";
+	userType = getLocalSession("userType") || "1";
+	if (userType != 2 || custId <= 0){
+		$.toast("非合法用户，无法访问");
+		xhq.gotoErrorPage();
+		return;
+	}
+
+	// 再实时获取一次可转金额
+	$.showIndicator();
+    var param = { interId:'toc.getIntegralCash', channel: 'C', custId:custId};
+	xhq.__runXHQ(param, function (data) {
+		$.hideIndicator();
+		// 检测返回值
+		if (data.status == 0) {
+			if (data.body){
+				
+				var canDrawMoney = data.body.deductionCash
+				$(".draw_num").val("可转金额"+canDrawMoney/100+"元");
+				if (canDrawMoney<DRAW_MIN_MONEY){
+					$.toast("您的可提现金额还不到："+(DRAW_MIN_MONEY/100)+"元，不能提现");
+				}
+			}else{
+				$.toast("您的可提现金额还不到："+(DRAW_MIN_MONEY/100)+"元，不能提现");
+			}	
+			
+		}else{
+			$.toast(data.message);
+		}
+	})
+	
+	$("#toBind").on('tap',function(){
+		xhq.gotoUrl("bind_card2.html")
+	})
+});
+</script>
+</html>

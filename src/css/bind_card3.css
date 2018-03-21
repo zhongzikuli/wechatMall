@@ -1,0 +1,74 @@
+.page {
+  background: #f8f8f8;
+  font-family: PingFangSC-Regular !important;
+}
+.page .content .infor_box .infor_title {
+  margin: 0;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: .7rem;
+  font-weight: 300;
+  color: #000000;
+  background: #fafafa;
+  padding-left: 1rem;
+}
+.page .content .infor_box .list-block {
+  margin: 0;
+}
+.page .content .infor_box .list-block .tips_msg {
+  width: 100%;
+  color: #de3f37;
+  font-size: .8rem;
+  font-weight: 300;
+  text-align: center;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0;
+}
+.page .content .infor_box .list-block .item-content {
+  padding-left: .2rem;
+}
+.page .content .infor_box .list-block .item-content .item-inner .item-title {
+  width: 20% !important;
+  font-size: .8rem;
+  font-weight: 300;
+}
+.page .content .infor_box .list-block .item-content .item-input {
+  display: flex;
+  display: -webkit-flex;
+}
+.page .content .infor_box .list-block .item-content .item-input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+.page .content .infor_box .list-block .item-content .item-input .get_infor {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.page .content .infor_box .list-block .item-content .item-input .code_btn {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: .65rem;
+  font-weight: 300;
+  border: none;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  height: 1.2rem;
+  line-height: 1rem;
+  margin-top: .4rem;
+  background-color: #f8f8f8;
+}
+.page .content .go_pay {
+  width: 90%;
+  margin: 0 auto;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 300;
+  background: #de3f37;
+  border: none;
+}
+.page .content .go_pay a {
+  color: #f8f8f8;
+}
+.page_two .now_pay {
+  margin-top: 2rem;
+}
