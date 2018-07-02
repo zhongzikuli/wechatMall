@@ -1,1 +1,0 @@
-function refer(){0==t&&xhq.gotoUrl("home.html",{mode:1}),document.getElementById("cut_time").innerHTML=""+t+"秒后自动跳转……",t--}var t=5;setInterval("refer()",1e3);
